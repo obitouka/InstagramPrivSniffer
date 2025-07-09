@@ -10,9 +10,9 @@ Log-out of instagram first then run in cmd
 python privateMediaViewer.py
 
 [OUTPUT]
-Enter Instagram username: username
-1: https://www.instagram.com/p/DL47hX4olz8wRQXBQ4HAaEmba9x7
-2: https://www.instagram.com/p/DK5AXeWzVb5jW8jMdSMz3T37AfsU
+Enter Instagram username: keyloggerlvr
+1: https://www.instagram.com/p/DL47hX4olz8wRQXBQ4HAaE...
+2: https://www.instagram.com/p/DK5AXeWzVb5jW8jMdSMz3T...
 ```
 
 
