@@ -1,3 +1,8 @@
+# Instagram Private Media Viewer
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+
 ## ⚙️ Feature
 - This tool only fetches the list of private media that are being collaborated
 
