@@ -1,5 +1,10 @@
 # Instagram Private Media Viewer
 
+> © 09/07/2025 [Obitouka](https://github.com/obitouka). All rights reserved.  
+> This tool is licensed under the MIT License.  
+> If you build on this work, please give credit.
+
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 
