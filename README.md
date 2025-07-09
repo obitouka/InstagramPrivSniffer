@@ -4,7 +4,7 @@
 
 
 ## ⚙️ Feature
-- This tool only fetches the list of private media that are being collaborated
+- This tool fetches the list of medias of a private account (only which are being collaborated)
 
 
 ## 🔐 Privacy & Legality
