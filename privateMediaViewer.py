@@ -37,5 +37,5 @@ def get_posts(username):
         print("Error:", str(e))
 
 print("WARNING: Only works for media from private/public profiles with collaborations")
-username = input("Enter Instagram username: ")
+username = input("\nEnter Instagram username: ")
 get_posts(username)
