@@ -16,7 +16,9 @@ def get_posts(username):
         user_data = response.json()["data"]["user"]
 
         if user_data.get("is_private"):
-            print("The profile is private. Fetching only collaborated posts (if available)...")
+            print("The profile is Private. Fetching only collaborated posts (if available)...")
+        else: 
+            print("The profile is Public. Fetching only collaborated posts (if available)...")
         '''else:
             print("Found public profile, skipping fetch as intended.")
             return
@@ -36,6 +38,6 @@ def get_posts(username):
     except Exception as e:
         print("Error:", str(e))
 
-print("WARNING: Only works for media from private/public profiles with collaborations")
+#print("WARNING: Only works for media from private/public profiles with collaborations")
 username = input("\nEnter Instagram username: ")
 get_posts(username)
