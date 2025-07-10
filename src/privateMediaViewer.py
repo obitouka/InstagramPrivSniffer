@@ -1,3 +1,7 @@
+"""
+Copyright (c) 2025 obitouka
+See the file 'LICENSE' for copying permission
+"""
 import requests
 
 def get_posts(username):
