@@ -3,7 +3,7 @@ import requests
 def get_posts(username):
     url = f"https://www.instagram.com/api/v1/users/web_profile_info/?username={username}"
     headers = {
-        "X-IG-App-ID": "936619743392459",
+        "X-IG-App-ID": "936619743392459",we
         "Referer": f"https://www.instagram.com/{username}/",
     }
 
