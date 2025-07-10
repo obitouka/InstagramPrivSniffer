@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Built_with-Python-blue?logo=python&logoColor=white)
+![OSINT](https://img.shields.io/badge/Category-OSINT-orange)
+![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ## FEATURES
 - Fetches a list of **collaborated media posts** from a public/private Instagram account
 - Does **not** require login or authentication
