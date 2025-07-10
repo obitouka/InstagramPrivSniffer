@@ -7,7 +7,7 @@
 ## HOW TO USE
 
 ![Example](./img/sample.jpg)
-
+s
 <br>
 
 ## PRIVACY & LEGALITY
