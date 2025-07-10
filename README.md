@@ -5,7 +5,7 @@
 
 ## HOW TO USE
 
-![Example](./example.png)
+![Example](./sample.jpg)
 
 <br>
 
