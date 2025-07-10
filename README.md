@@ -1,5 +1,6 @@
 ## FEATURE
 - This tool fetches the list of medias of a private/public account (only which are being collaborated)
+- No **"log-in"** required
 
 <br>
 
