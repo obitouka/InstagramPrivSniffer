@@ -26,7 +26,7 @@ Use responsibly and adhere to Instagram's Terms of Service.
 <br>
 
 ## LICENCE 
-> © 09/07/2025 [Obitouka](https://github.com/obitouka). All rights reserved.  
+> © 2025 [Obitouka](https://github.com/obitouka). All rights reserved.  
 > This tool is licensed under the MIT License.  
 > If you build on this work, please give credit.
 
