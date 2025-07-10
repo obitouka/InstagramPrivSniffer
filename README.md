@@ -1,4 +1,5 @@
 ![Python](https://img.shields.io/badge/Built_with-Python-blue?logo=python&logoColor=white)
+![Instagram](https://img.shields.io/badge/Category-Instagram-pink)
 ![OSINT](https://img.shields.io/badge/Category-OSINT-orange)
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
