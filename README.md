@@ -16,6 +16,14 @@
 
 <br>
 
+### PROOF
+
+You are **legally authorized** to test this tool on my private Instagram account: [@keyloggerluvr](https://www.instagram.com/keyloggerluvr).
+This account is mine, and I give **full consent** for testing purposes only.
+> ⚠️ Please use ethically and do not violate Instagram's Terms of Service.
+
+<br>
+
 ## PRIVACY & LEGALITY
 
 This tool uses **only publicly accessible data** and does **not bypass** any security mechanisms.  
