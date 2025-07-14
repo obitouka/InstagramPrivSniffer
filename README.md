@@ -4,7 +4,7 @@
 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## FEATURES / USE
+## FEATURES 
 - Fetches a list of **collaborated media posts** from a private/public Instagram account
 - Does **not** require login or authentication
 
@@ -16,7 +16,7 @@
 
 <br>
 
-### PROOF
+## PROOF
 
 You are **legally authorized** to test this tool on my private Instagram account: [@keyloggerluvr](https://www.instagram.com/keyloggerluvr).
 This account is mine, and I give **full consent** for testing purposes only.
