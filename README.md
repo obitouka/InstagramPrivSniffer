@@ -6,7 +6,7 @@
 
 ## FEATURES 
 - Fetches a list of **collaborated media posts** from a private/public Instagram account
-- Does **not** require login or authentication
+- Does **not** require login
 
 <br>
 
