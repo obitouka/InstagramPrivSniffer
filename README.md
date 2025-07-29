@@ -4,12 +4,6 @@
 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## FEATURES 
-- Fetches a list of **collaborated media posts** from a private/public Instagram account
-- Does **not** require login
-
-<br>
-
 ## HOW TO USE
 
 ![Example](./img/sample.jpg)
