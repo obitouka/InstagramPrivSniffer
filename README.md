@@ -45,5 +45,3 @@ Please use responsibly and follow Instagram’s Terms of Service.
 © 2025 [Obitouka](https://github.com/obitouka). All rights reserved.  
 This tool is licensed under the **MIT License**.  
 If you build upon this project, please give appropriate credit.
-
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
