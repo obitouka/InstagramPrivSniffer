@@ -1,8 +1,8 @@
-![Python](https://img.shields.io/badge/Built_with-Python-blue?logo=python&logoColor=white)
-![Instagram](https://img.shields.io/badge/Category-Instagram-pink)
-![OSINT](https://img.shields.io/badge/Category-OSINT-orange)
+![Python](https://img.shields.io/badge/Built_with-Python-blue?logo=python&logoColor=white&style=plastic)
+![Instagram](https://img.shields.io/badge/Category-Instagram-9300FF?style=plastic)
+![OSINT](https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic)
 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
-![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![MIT License](https://img.shields.io/badge/License-MIT-D3FF00.svg?style=plastic)
 
 ## FEATURES 
 - Fetches a list of **collaborated media posts** from a private/public Instagram account
