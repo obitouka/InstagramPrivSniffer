@@ -1,4 +1,4 @@
-<img width="1053" height="343" alt="image" src="https://github.com/user-attachments/assets/72db783d-70d2-496a-838a-62cb35975099" />## FEATURE
+## FEATURE
 ![Python](https://img.shields.io/badge/Built_with-Python-blue?logo=python&logoColor=white&style=plastic)
 ![OSINT](https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic)
 ![Instagram](https://img.shields.io/badge/Target-Instagram-9300FF?style=plastic)
