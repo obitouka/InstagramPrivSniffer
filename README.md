@@ -6,8 +6,8 @@
 ![MIT License](https://img.shields.io/badge/License-MIT-D3FF00.svg?style=plastic)  
 <img src="https://img.shields.io/github/stars/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=000000&logo=github" width="100" /> <img src="https://img.shields.io/github/forks/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=000000&logo=github" width="100" />
 
-Unlock private Instagram posts? Almost.  
-Even if you have **```0% idea about them```**, see what they don’t want you to i.e. every **```collaborated post and who they collaborated with```** from a private account, leaked by sharing with a public profile (all without logging in!)
+### Unlock private Instagram posts? Almost.  
+Even if you have **```0% idea about them```**, see what they don’t want you to i.e. every **```collaborated post and who they collaborated with```** from a private account, leaked by sharing with a public profile **(all without logging in!)**
 
 <br>
 
