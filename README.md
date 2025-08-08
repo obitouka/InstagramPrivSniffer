@@ -1,3 +1,24 @@
+<div align="center">
+
+  <!-- Project Logo -->
+  <img src="./img/logo.png" alt="Logo" width="600" height="500" />
+
+  <br>
+  
+  <!-- Badges Row 1 -->
+  <img alt="Built with Python" src="https://img.shields.io/badge/Built_with-Python-blue?logo=python&logoColor=white&style=plastic" height="30" />
+  <img alt="Category OSINT" src="https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic" height="30" />
+  <img alt="Target Instagram" src="https://img.shields.io/badge/Target-Instagram-9300FF?style=plastic" height="30" />
+  <a href="https://awesome.re" title="Awesome"> <img alt="Awesome" src="https://awesome.re/badge-flat.svg" height="30" /> </a>
+  <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-D3FF00.svg?style=plastic" height="30" />
+
+  <br>
+
+  <!-- Badges Row 2 -->
+  <img src="https://img.shields.io/github/stars/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=000000&logo=github" width="130"/>
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=000000&logo=github" width="130"/>
+</div>
+
 ## FEATURE
 ![Python](https://img.shields.io/badge/Built_with-Python-blue?logo=python&logoColor=white&style=plastic)
 ![OSINT](https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic)
