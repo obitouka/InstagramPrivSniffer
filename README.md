@@ -20,12 +20,6 @@
 </div>
 
 ## FEATURE
-![Python](https://img.shields.io/badge/Built_with-Python-blue?logo=python&logoColor=white&style=plastic)
-![OSINT](https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic)
-![Instagram](https://img.shields.io/badge/Target-Instagram-9300FF?style=plastic)
-[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
-![MIT License](https://img.shields.io/badge/License-MIT-D3FF00.svg?style=plastic)  
-<img src="https://img.shields.io/github/stars/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=000000&logo=github" width="100" /> <img src="https://img.shields.io/github/forks/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=000000&logo=github" width="100" />
 
 #### Unlock private Instagram posts? Almost.  
 Even if you have **```0% idea about them```**, see what they don’t want you to i.e. every **```collaborated post and who they collaborated with```** from a private account, revealed by colllaborating with a public profile **(all without logging in!)**
