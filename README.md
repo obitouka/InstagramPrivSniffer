@@ -30,12 +30,9 @@ Even if you have **```0% idea about them```**, see what they don’t want you to
 
 ![Example](./img/sample.jpg)
 
-<br>
+#### PROOF
 
-## PROOF
-
-You are **legally authorized** to test this tool on my private Instagram account: [@keyloggerluvr](https://www.instagram.com/keyloggerluvr).
-This account is mine, and I give **full consent** for testing purposes only.
+You are **legally authorized** to test this tool on my test private Instagram account: [@keyloggerluvr](https://www.instagram.com/keyloggerluvr). This account is mine, and I give **full consent** for testing purposes only.
 > ⚠️ Please use ethically and do not violate Instagram's Terms of Service.
 
 <br>
