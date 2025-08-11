@@ -38,7 +38,8 @@ You are **legally authorized** to test this tool on my test private Instagram ac
 ## PRIVACY & DISCLAIMER :
 
 This tool uses **only publicly accessible data** and does **not bypass** any security mechanisms.  It relies on Instagram’s [Collaboration feature](https://help.instagram.com/3526836317546926), where collaborative posts are intentionally public even if one collaborator’s account is private. 
-Created for **educational purposes** only. The author is not responsible for misuse.
+
+**Created for educational purposes only. The author is not responsible for misuse.**
 
 <br>
 
