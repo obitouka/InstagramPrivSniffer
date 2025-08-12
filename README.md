@@ -44,7 +44,7 @@ This tool neither bypasses any security measures nor Instagram’s policies. It 
 <br>
 
 ## Contributing
-If you wish to contribute, please read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+If you wish to contribute, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file.
 
 <br>
 
