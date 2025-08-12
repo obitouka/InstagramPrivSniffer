@@ -20,28 +20,33 @@ def get_posts(username):
         user_data = response.json()["data"]["user"]
 
         if user_data.get("is_private"):
-            print("The profile is Private. Fetching only collaborated posts (if available)...")
-        else: 
-            print("The profile is Public. Fetching only collaborated posts (if available)...")
-        '''else:
-            print("Found public profile, skipping fetch as intended.")
-            return
-        '''
+            print("The profile is private. Fetching collaborated posts...")
+        else:
+            print("The profile is public. Fetching collaborated posts...")
+
         edges = user_data["edge_owner_to_timeline_media"]["edges"]
 
         if not edges:
             print("No posts found.")
             return
 
-        i = 0
-        while i < len(edges):
-            shortcode = edges[i]["node"]["shortcode"]
+        for i, edge in enumerate(edges):
+            shortcode = edge["node"]["shortcode"]
             print(f"{i+1}: https://www.instagram.com/p/{shortcode}")
-            i += 1
 
+    except requests.exceptions.RequestException as e:
+        print(f"An error occurred during the request: {e}")
+    except KeyError:
+        print("Could not retrieve user data. The profile may not exist or there was an API change.")
     except Exception as e:
-        print("Error:", str(e))
+        print(f"An unexpected error occurred: {e}")
 
-#print("WARNING: Only works for media from private/public profiles with collaborations")
-username = input("\nEnter Instagram username: ")
-get_posts(username)
+def main():
+    """Main function to run the script."""
+    # print("WARNING: Only works for media from private/public profiles with collaborations")
+    username = input("Enter Instagram username: ")
+    if username:
+        get_posts(username)
+
+if __name__ == "__main__":
+    main()

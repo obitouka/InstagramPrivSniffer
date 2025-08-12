@@ -13,9 +13,47 @@
 
 <br>
 
-## HOW TO USE
+## Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/obitouka/InstagramPrivSniffer.git
+   cd InstagramPrivSniffer
+   ```
+
+2. **Install dependencies:**
+   Make sure you have Python 3 installed. Then, install the required libraries using pip:
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Run the script from your terminal:
+```sh
+python src/privateMediaViewer.py
+```
+You will be prompted to enter an Instagram username. The script will then fetch and display the collaborated posts.
 
 ![Example](./img/sample.jpg)
+
+## Building from Source
+
+You can create a standalone executable for Windows, macOS, or Linux using `pyinstaller`. This is particularly useful for running the script on a Windows on ARM machine without needing to install Python.
+
+1. **Install PyInstaller:**
+   ```sh
+   pip install pyinstaller
+   ```
+
+2. **Build the executable:**
+   Run the following command in the repository's root directory:
+   ```sh
+   pyinstaller --onefile --name InstagramPrivSniffer src/privateMediaViewer.py
+   ```
+   The executable will be created in the `dist` folder.
+
+   **Note for Windows on ARM:** To build for Windows on ARM, you must run this command on a Windows on ARM machine with a native ARM64 version of Python and PyInstaller installed.
 
 <br>
 
