@@ -28,8 +28,9 @@ Even if you have **```0% idea about them```**, see what they don’t want you to
 
 ## HOW TO USE:
 
-You are **legally authorized** to test this tool on my test private Instagram account: [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as a proof that this tool works. This account is mine, and I give **full consent** for testing purposes only.
-> ⚠️ Please use ethically and do not violate Instagram's Terms of Service.
+You have **my permission** to test this tool on **my** experimental private Instagram account [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) for **testing purposes only** so as to prove that the tool works. 
+
+<br>
 
 ![Example](./img/sample.jpg)
 
@@ -37,14 +38,12 @@ You are **legally authorized** to test this tool on my test private Instagram ac
 
 ## PRIVACY & DISCLAIMER :
 
-This tool uses **only publicly accessible data** and does **not bypass** any security mechanisms.  It relies on Instagram’s [Collaboration feature](https://help.instagram.com/3526836317546926), where collaborative posts are intentionally public even if one collaborator’s account is private. 
-
-**Created for educational purposes only. The author is not responsible for misuse.**
+This tool **does not bypass** any security measures and **does not violate** Instagram’s policies. It uses Instagram’s [Collaboration feature](https://help.instagram.com/3526836317546926).
+> ⚠️ **Created for educational purposes only, so please use it ethically. The author is not responsible for any misuse.**
 
 <br>
 
 ## LICENSE :
 
-© 2025 [Obitouka](https://github.com/obitouka). All rights reserved.  
-This tool is licensed under the **MIT License**.  
-If you build upon this project, please give appropriate credit.
+Licensed under the **MIT License** © 2025 [Obitouka](https://github.com/obitouka).  
+You are free to use, modify, and distribute this project, provided that you include the original copyright and license notice.
