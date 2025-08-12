@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Project Logo -->
-  <img src="./img/logo.png" alt="Logo" width="600" height="500" />
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Roboto+Mono&weight=500&size=40&duration=4500&pause=500&color=00F72B&vCenter=true&width=500&height=70&lines=INSTAGRAM+PrivSniffer" alt="Typing SVG"></a>
 
   <br>
   
@@ -28,7 +28,7 @@ Even if you have **```0% idea about them```**, see what they don’t want you to
 
 ## HOW TO USE:
 
-You have **my permission** to test this tool on **my** experimental private Instagram account [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as proof that the tool works.
+You have **my permission** to test this tool on **my** experimental private Instagram account i.e. [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as a proof that the tool works.
 
 <br>
 
@@ -43,7 +43,12 @@ This tool neither bypasses any security measures nor Instagram’s policies. It 
 
 <br>
 
+## Contributing
+If you wish to contribute, please read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+<br>
+
 ## LICENSE :
 
-Licensed under the **MIT License** © 2025 [Obitouka](https://github.com/obitouka).  
-You are free to use, modify, and distribute this project, provided that you include the original copyright and license notice.
+Licensed under the [MIT License](LICENSE) © 2025 [Obitouka](https://github.com/obitouka).  
+You are free to use, modify, and distribute this project, provided that you **include the original copyright and license notice**.
