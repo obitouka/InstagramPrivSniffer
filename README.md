@@ -28,7 +28,7 @@ Even if you have **```0% idea about them```**, see what they don’t want you to
 
 ## HOW TO USE:
 
-You have **my permission** to test this tool on **my** experimental private Instagram account [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) for **testing purposes only** so as to prove that the tool works. 
+You have **my permission** to test this tool on **my** experimental private Instagram account [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as proof that the tool works.
 
 <br>
 
@@ -36,9 +36,9 @@ You have **my permission** to test this tool on **my** experimental private Inst
 
 <br>
 
-## PRIVACY & DISCLAIMER :
+## DISCLAIMER :
 
-This tool **does not bypass** any security measures and **does not violate** Instagram’s policies. It uses Instagram’s [Collaboration feature](https://help.instagram.com/3526836317546926).
+This tool neither bypasses any security measures nor Instagram’s policies. It uses Instagram’s [Collaboration feature](https://help.instagram.com/3526836317546926).
 > ⚠️ **Created for educational purposes only, so please use it ethically. The author is not responsible for any misuse.**
 
 <br>
