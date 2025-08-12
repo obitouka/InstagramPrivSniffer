@@ -1,11 +1,3 @@
----
-name: Bug Report
-about: Submit an issue related to privateMediaViewer
-title: "Bug: "
-labels: bug
----
-
-<br>
 
 **Description:**
 Briefly describe the problem.
