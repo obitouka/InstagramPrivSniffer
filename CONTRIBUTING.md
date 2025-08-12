@@ -1,7 +1,7 @@
 # Contributing Guide
 
 Thanks for showing interest in this project!  
-You can help by reporting bugs or suggesting features.
+You can help by **fixing the code** or **reporting bugs**. (Currently not loocking for any contributions in adding feature but will soon look for CLI feature)
 
 ## How to Contribute
 
@@ -13,6 +13,6 @@ You can help by reporting bugs or suggesting features.
 
 ## Issues
 
-- Found a bug? Open an [Issue](https://github.com/obitouka/privateMediaViewer/issues).
+- Found a bug? Open an [Issue](https://github.com/obitouka/InstagramPrivSniffer/issues).
 - Suggestions and feedback are always welcome.
 
