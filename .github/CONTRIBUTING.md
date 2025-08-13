@@ -1,7 +1,7 @@
 # Contributing Guide
 
 Thanks for showing interest in this project!  
-You can help by **fixing the code** or **reporting bugs**. (Currently not loocking for any contributions in adding feature but will soon look for CLI feature)
+You can help by **fixing the code** or **reporting bugs**. (Currently not looking for any contributions in adding feature, but will soon look for a CLI version feature)
 
 ## How to Contribute
 
