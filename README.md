@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Project Logo 07FF00  FF1616-->
-  <img src="https://github.com/obitouka/InstagramPrivSniffer/blob/main/img/logo.png" width="140"/>  
+  <!--  <img src="https://github.com/obitouka/InstagramPrivSniffer/blob/main/img/logo.png" width="140"/>  -->
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Roboto+Mono&weight=500&size=70&letterSpacing=&duration=1&pause=105&color=FF0000&multiline=true&width=460&height=160&lines=INSTAGRAM;PrivSniffer" alt="Typing SVG" /></a>
   <br>
   
