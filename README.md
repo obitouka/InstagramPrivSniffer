@@ -77,5 +77,5 @@ If you wish to contribute, please read the [CONTRIBUTING.md](.github/CONTRIBUTIN
 
 ## LICENSE :
 
-Licensed under the [MIT License](LICENSE) © 2025 [Obitouka](https://github.com/obitouka).  
+Licensed under the [MIT License](LICENSE) © 2025 [obitouka](https://github.com/obitouka).  
 You are free to use, modify, and distribute this project, provided that you **include the original copyright and license notice**.
