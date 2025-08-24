@@ -32,9 +32,6 @@
   <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fobitouka">
     <img alt="GitHub Profile" src="https://img.shields.io/badge/GitHub-181717?style=plastic&logo=github&logoColor=white" width="100"/>
   </a>
-  <a href="https://www.linkedin.com/in/roshansankalpbehera/">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=plastic&logo=linkedin&logoColor=white" width="90"/>
-  </a>
   <a href="mailto:obitouka@protonmail.com">
     <img alt="ProtonMail" src="https://img.shields.io/badge/ProtonMail-6F42C1?style=plastic&logo=protonmail&logoColor=white" width="130"/>
   </a>
