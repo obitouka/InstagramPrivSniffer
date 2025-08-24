@@ -60,6 +60,10 @@ Clone the repository using:
     
 Or click [here](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads/main.zip) to download the ZIP file.
 
+#### Install dependencies:
+
+    pip install -r requirements.txt
+
 <br>
 
 ## USAGE:  
