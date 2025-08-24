@@ -1,0 +1,26 @@
+"""
+Copyright (c) 2025 obitouka
+See the file 'LICENSE' for copying permission
+"""
+
+from colorama import Fore, Style, init
+
+init(autoreset=True)
+
+GREEN = Fore.GREEN
+RED = Fore.RED
+YELLOW = Fore.YELLOW
+
+LIGHTBLACK_EX = Fore.LIGHTBLACK_EX
+LIGHTWHITE_EX = Fore.LIGHTWHITE_EX
+LIGHTBLUE_EX = Fore.LIGHTBLUE_EX
+LIGHTCYAN_EX = Fore.LIGHTCYAN_EX
+LIGHTMAGENTA_EX = Fore.LIGHTMAGENTA_EX
+
+RESET = Style.RESET_ALL
+
+def colorPrint(text, color=None):
+    if color:
+        print(f"{color}{text}{RESET}")
+    else:
+        print(text)
