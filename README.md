@@ -53,9 +53,27 @@ Even if you have **```0% idea about them```**, see what they don’t want you to
 
 <br>
 
-## HOW TO USE:
+## INSTALLATION:   
+Clone the repository using:
+    
+    https://github.com/obitouka/InstagramPrivSniffer.git
+    
+Or click [here](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads/main.zip) to download the ZIP file.
 
-You have **my permission** to test this tool on **my** experimental private Instagram account i.e. [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as a proof that the tool works.
+<br>
+
+## USAGE:  
+Navigate to the InstagramPrivSniffer directory, open a terminal, and run:
+
+    python main.py -h
+
+This will display the help menu and available CLI commands.
+
+#### EXAMPLE:
+You have **my permission** to test this command on **my** experimental private Instagram account i.e. [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) to verify tool works.
+
+    python main.py --name keyloggerluvr
+    
 
 <br>
 
