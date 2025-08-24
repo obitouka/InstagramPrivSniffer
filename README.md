@@ -8,7 +8,7 @@
   -->
   
   <table>
-   <td><img src="https://github.com/obitouka/InstagramPrivSniffer/blob/main/img/logo.png" width="125"/></td>
+   <td><img src="https://github.com/obitouka/InstagramPrivSniffer/blob/main/assets/img/logo.png" width="125"/></td>
     <td>
       <!-- Instagram -->
       <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Audiowide&size=50&duration=1&pause=10&color=00F72F&vCenter=true&width=350&lines=INSTAGRAM&repeat=true" alt="INSTAGRAM" /></a><br>
@@ -59,7 +59,7 @@ You have **my permission** to test this tool on **my** experimental private Inst
 
 <br>
 
-![Example](./img/sample.jpg)
+![Example](./assets/img/sample.jpg)
 
 <br>
 
