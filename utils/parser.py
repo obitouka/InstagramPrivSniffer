@@ -1,6 +1,6 @@
 """
 Copyright (c) 2025 obitouka
-See the file 'LICENSE' for copying permission
+See the file 'LICENSE' for copying permission 
 """
 
 from argparse import ArgumentParser
