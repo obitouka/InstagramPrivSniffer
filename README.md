@@ -11,7 +11,7 @@
    <td><img src="./assets/img/logo.png" width="125"/></td>
     <td>
       <!-- Instagram -->
-      <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Audiowide&size=50&duration=1&pause=10&color=00F72F&vCenter=true&width=350&lines=INSTAGRAM&repeat=true" alt="INSTAGRAM" /></a><br>
+      <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Audiowide&size=50&duration=1&pause=10&color=C20BBE&vCenter=true&width=350&lines=INSTAGRAM&repeat=true" alt="INSTAGRAM" /></a><br>
       <!-- PrivSniffer -->
       <a href="https://git.io/typing-svg"> <img src="https://readme-typing-svg.herokuapp.com?font=Audiowide&size=50&duration=1&pause=20&color=FF0000&vCenter=true&width=320&lines=PrivSniffer&repeat=true" alt="PrivSniffer" /></a>
     </td>
