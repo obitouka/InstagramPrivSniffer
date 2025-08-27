@@ -11,7 +11,7 @@
    <td><img src="./assets/img/logo.png" width="125"/></td>
     <td>
       <!-- Instagram -->
-      <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Audiowide&size=50&duration=1&pause=10&color=C20BBE&vCenter=true&width=350&lines=INSTAGRAM&repeat=true" alt="INSTAGRAM" /></a><br>
+      <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Audiowide&size=50&duration=1&pause=10&color=E700FF&vCenter=true&width=350&lines=INSTAGRAM&repeat=true" alt="INSTAGRAM" /></a><br>
       <!-- PrivSniffer -->
       <a href="https://git.io/typing-svg"> <img src="https://readme-typing-svg.herokuapp.com?font=Audiowide&size=50&duration=1&pause=20&color=FF0000&vCenter=true&width=320&lines=PrivSniffer&repeat=true" alt="PrivSniffer" /></a>
     </td>
@@ -20,27 +20,18 @@
   <br>
   
   <!-- Badges Row 1 -->
-  <img alt="Built with Python" src="https://img.shields.io/badge/Built_with-Python-blue?logo=python&logoColor=white&style=plastic" height="30" />
-  <img alt="Category OSINT" src="https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic" height="30" />
-  <img alt="Target Instagram" src="https://img.shields.io/badge/Target-Instagram-9300FF?style=plastic" height="30" />
-  <a href="https://awesome.re" title="Awesome"> <img alt="Awesome" src="https://awesome.re/badge-flat.svg" height="30" /> </a>
-  <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-D3FF00.svg?style=plastic" height="30" />
+  <img alt="Built with Python" src="https://img.shields.io/badge/Built_with-Python-1987FF?logo=python&logoColor=white&style=plastic" height="30"/> <!-- PYTHON -->
+  <img alt="Category OSINT" src="https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic" height="30"/> <!-- Category: OSINT -->
+  <img alt="Target Instagram" src="https://img.shields.io/badge/Target-Instagram-BD00FF?style=plastic" height="30"/> <!-- Target: INSTAGRAM -->
+  <a href="https://awesome.re" title="Awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" height="30"/></a> <!-- Awesome -->
+  <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-D3FF00.svg?style=plastic" height="30"/> <!-- License: MIT -->  
+  <img src="https://img.shields.io/github/stars/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=111111&logo=github" width="140"/> <!-- Stars -->
+  <a href="https://github.com/obitouka"><img alt="GitHub Profile" src="https://img.shields.io/badge/GitHub-111111?style=plastic&logo=github&logoColor=FF0000" width="103"/></a> <!-- Github -->
+  <a href="https://www.linkedin.com/in/roshansankalpbehera/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-1987FF?style=plastic&logo=linkedin&logoColor=white" width="90"/></a> <!-- Linkedin -->
+  <a href="mailto:obitouka@protonmail.com"><img alt="ProtonMail" src="https://img.shields.io/badge/ProtonMail-782DFF?style=plastic&logo=protonmail&logoColor=white" width="130"/></a> <!-- ProtonMail -->
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=111111&logo=github" width="140"/> <!-- Forks -->
 
-  <br>
-
-  <!-- Badges Row 2 -->
-  <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fobitouka">
-    <img alt="GitHub Profile" src="https://img.shields.io/badge/GitHub-181717?style=plastic&logo=github&logoColor=white" width="100"/>
-  </a>
-  <a href="mailto:obitouka@protonmail.com">
-    <img alt="ProtonMail" src="https://img.shields.io/badge/ProtonMail-6F42C1?style=plastic&logo=protonmail&logoColor=white" width="130"/>
-  </a>
-
-  <br>
-
-  <!-- Badges Row 3 -->
-  <img src="https://img.shields.io/github/stars/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=000000&logo=github" width="130"/>
-  <img alt="GitHub forks" src="https://img.shields.io/github/forks/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=000000&logo=github" width="130"/>
+  
 </div>
 
 ## FEATURE :
@@ -51,29 +42,26 @@ Even if you have **```0% idea about them```**, see what they don’t want you to
 <br>
 
 ## INSTALLATION:   
-Clone the repository using:
+Click [here](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads/main.zip) to download the ZIP file *or* clone the repository using:
     
-    https://github.com/obitouka/InstagramPrivSniffer.git
-    
-Or click [here](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads/main.zip) to download the ZIP file.
+    git clone https://github.com/obitouka/InstagramPrivSniffer.git
 
-#### Install dependencies:
+**Install dependencies:**
 
     pip install -r requirements.txt
 
 <br>
 
 ## USAGE:  
-Navigate to the InstagramPrivSniffer directory, open a terminal, and run:
+Navigate to the InstagramPrivSniffer directory, open a terminal, and run it to display the help menu and available CLI arguments.:
 
     python main.py -h
 
-This will display the help menu and available CLI commands.
 
-#### EXAMPLE:
+**EXAMPLE:**  
 You have **my permission** to test this command on **my** experimental private Instagram account i.e. [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) to verify tool works.
 
-    python main.py --name keyloggerluvr
+    python main.py --n keyloggerluvr
     
 
 <br>
