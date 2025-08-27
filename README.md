@@ -53,7 +53,7 @@ Click [here](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads
 <br>
 
 ## USAGE:  
-Navigate to the InstagramPrivSniffer directory, open a terminal, and run it to display the help menu and available CLI arguments.:
+Navigate to the InstagramPrivSniffer directory, open a terminal and run it to display the help menu and available CLI arguments:
 
     python main.py -h
 
