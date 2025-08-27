@@ -59,9 +59,9 @@ Navigate to the InstagramPrivSniffer directory, open a terminal and run it to di
 
 
 **EXAMPLE:**  
-You have **my permission** to test this command on **my** experimental private Instagram account i.e. [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) to verify tool works.
+You have **my permission** to test this command on **my** experimental private Instagram account i.e. [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as a proof that tool works.
 
-    python main.py --n keyloggerluvr
+    python main.py -n keyloggerluvr
     
 
 <br>
