@@ -1,3 +1,7 @@
 requests
 PySimpleGUI
 instaloader
+Flask
+Flask-Login
+Werkzeug
+Flask-SocketIO

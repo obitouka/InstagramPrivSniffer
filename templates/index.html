@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Viewer</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        .container { max-width: 800px; margin: auto; }
+        .form-group { margin-bottom: 1em; }
+        .post-list { list-style-type: none; padding: 0; }
+        .post-item { border: 1px solid #ccc; padding: 0.5em; margin-bottom: 0.5em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Media Viewer</h1>
+        <p>Welcome, {{ current_user.username }}! | <a href="{{ url_for('dashboard') }}">Dashboard</a> | <a href="{{ url_for('logout') }}">Logout</a></p>
+        <form id="fetch-form">
+            <div class="form-group">
+                <label for="plugin">Select Platform:</label>
+                <select name="plugin" id="plugin">
+                    {% for plugin in plugins %}
+                        <option value="{{ plugin }}">{{ plugin }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="usernames">Enter Username(s) (comma-separated):</label>
+                <input type="text" name="usernames" id="usernames" size="50">
+            </div>
+            <button type="submit">Fetch Posts</button>
+        </form>
+
+        <div id="progress-container" style="display:none;">
+            <h3>Progress</h3>
+            <progress id="progress-bar" value="0" max="100"></progress>
+            <p id="progress-msg"></p>
+        </div>
+
+        <h2>Collected Posts</h2>
+        <ul class="post-list">
+            {% for post in posts %}
+                <li class="post-item">
+                    <p><strong>{{ post[0] }}</strong> - <a href="{{ post[1] }}" target="_blank">View Post</a></p>
+                    <p><small>Collected on: {{ post[5] }}</small></p>
+                    <blockquote>{{ post[2] }}</blockquote>
+                    <p><strong>Likes:</strong> {{ post[3] }} | <strong>Comments:</strong> {{ post[4] }}</p>
+                </li>
+            {% else %}
+                <li>No posts found in the database yet.</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <script src="https://cdn.socket.io/4.5.2/socket.io.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const socket = io();
+
+            socket.on('connect', () => {
+                console.log('Connected to server');
+            });
+
+            const form = document.getElementById('fetch-form');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const usernames = document.getElementById('usernames').value;
+                const plugin = document.getElementById('plugin').value;
+
+                document.getElementById('progress-container').style.display = 'block';
+                document.getElementById('progress-bar').value = 0;
+                document.getElementById('progress-msg').textContent = 'Starting...';
+
+                socket.emit('fetch_posts', { usernames: usernames, plugin: plugin });
+            });
+
+            socket.on('progress', (data) => {
+                document.getElementById('progress-bar').value = data.percent;
+                document.getElementById('progress-msg').textContent = data.msg;
+                if (data.percent >= 100) {
+                    // Optionally refresh the page or update the list dynamically
+                    setTimeout(() => window.location.reload(), 1000);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

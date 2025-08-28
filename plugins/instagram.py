@@ -9,34 +9,26 @@ class InstagramPlugin(ProviderPlugin):
 
     def get_posts(self, username, proxies=None):
         """Fetches collaborated posts for a given Instagram username."""
-        url = f"https://www.instagram.com/api/v1/users/web_profile_info/?username={username}"
-        headers = {
-            "X-IG-App-ID": "936619743392459",
-            "Referer": f"https://www.instagram.com/{username}/",
-        }
+        L = instaloader.Instaloader(download_videos=False, save_metadata=False)
+        if proxies:
+            L.context.proxies = proxies
 
+        posts_data = []
         try:
-            response = requests.get(url, headers=headers, proxies=proxies)
-            if response.status_code != 200:
-                print(f"Failed to fetch data: Status code {response.status_code}")
-                return None
-
-            user_data = response.json()["data"]["user"]
-            edges = user_data["edge_owner_to_timeline_media"]["edges"]
-
-            if not edges:
-                return []
-
-            posts = [f"https://www.instagram.com/p/{edge['node']['shortcode']}" for edge in edges]
-            return posts
-
-        except requests.exceptions.RequestException as e:
-            print(f"An error occurred during the request: {e}")
-        except KeyError:
-            print("Could not retrieve user data. The profile may not exist or there was an API change.")
+            profile = instaloader.Profile.from_username(L.context, username)
+            for post in profile.get_posts():
+                # We are only interested in collaborated posts for this plugin's purpose
+                if post.is_pinned or username not in [p.username for p in post.get_dependencies()]:
+                    posts_data.append({
+                        "url": f"https://www.instagram.com/p/{post.shortcode}",
+                        "caption": post.caption,
+                        "likes": post.likes,
+                        "comments": post.comments
+                    })
+            return posts_data
         except Exception as e:
-            print(f"An unexpected error occurred: {e}")
-        return None
+            print(f"An error occurred while fetching posts for {username}: {e}")
+            return None
 
     def get_shortcode_from_url(self, url):
         """Extracts the shortcode from an Instagram post URL."""
