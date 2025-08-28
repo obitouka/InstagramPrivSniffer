@@ -1,106 +1,87 @@
-## FEATURES 
-![Python](https://img.shields.io/badge/Built_with-Python-blue?logo=python&logoColor=white&style=plastic)
-![Instagram](https://img.shields.io/badge/Target-Instagram-9300FF?style=plastic)
-![OSINT](https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic)
-[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
-![MIT License](https://img.shields.io/badge/License-MIT-D3FF00.svg?style=plastic)  
-  
-<img src="https://img.shields.io/github/stars/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=000000&logo=github" width="100" /> <img src="https://img.shields.io/github/forks/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=000000&logo=github" width="100" />
+# Media Viewer and Analyzer
 
+This project is a powerful, web-based tool for fetching, storing, and analyzing media post information from various social media platforms via a flexible plugin system. It has evolved from a simple script into a multi-user web application with a database, a real-time progress dashboard, and data visualization capabilities.
 
-- Fetches a list of **collaborated media posts** from a private/public Instagram account
-- Does **not** require login
+## Features
 
-<br>
+- **Plugin-Based Architecture:** Easily extend the application to support new platforms by creating new plugins. Comes with a default plugin for Instagram.
+- **Web-Based UI:** A clean and modern web interface for interacting with the application, built with Flask.
+- **Multi-User Accounts:** A full user registration and login system to keep each user's data private.
+- **Persistent Storage:** All collected data is stored in a robust SQLite database.
+- **Real-Time Progress:** A dynamic progress bar provides real-time feedback during long-running data fetching operations.
+- **Data Visualization:** A dashboard page visualizes the collected data, showing metrics like posts per user.
+- **Production-Ready Deployment:** The application is configured to run in a production environment using Docker and Gunicorn.
+- **Automated Test Suite:** A comprehensive test suite using pytest ensures code quality and reliability.
 
-## Installation
+## Getting Started
 
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/obitouka/InstagramPrivSniffer.git
-   cd InstagramPrivSniffer
-   ```
+There are two primary ways to run the application: via Docker (recommended for most users) or by setting up a local development environment.
 
-2. **Install dependencies:**
-   Make sure you have Python 3 installed. Then, install the required libraries using pip:
-   ```sh
-   pip install -r requirements.txt
-   ```
+### Docker Deployment (Recommended)
+
+This is the easiest and most reliable way to get the application running.
+
+1.  **Build the Docker Image:**
+    From the root of the project directory, run:
+    ```sh
+    docker build -t media-viewer .
+    ```
+
+2.  **Run the Docker Container:**
+    ```sh
+    docker run -d -p 5000:5000 --name media-viewer-container -v $(pwd)/media_data.db:/app/media_data.db media-viewer
+    ```
+    - `-d` runs the container in detached mode (in the background).
+    - `-p 5000:5000` maps port 5000 on your host to port 5000 in the container.
+    - `--name media-viewer-container` gives the container a memorable name.
+    - `-v $(pwd)/media_data.db:/app/media_data.db` mounts the database file from your current directory into the container, ensuring your data persists even if you remove the container.
+
+3.  **Access the Application:**
+    Open your web browser and navigate to `http://localhost:5000`.
+
+### Local Development Setup
+
+If you want to modify the code or contribute to the project, you should set up a local development environment.
+
+1.  **Clone the Repository:**
+    ```sh
+    git clone <repository_url>
+    cd <repository_directory>
+    ```
+
+2.  **Create a Virtual Environment:**
+    It's highly recommended to use a virtual environment to manage project dependencies.
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+
+3.  **Install Dependencies:**
+    Install all the required packages from `requirements.txt`.
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4.  **Run the Development Server:**
+    ```sh
+    python app.py
+    ```
+    The application will be running in debug mode at `http://localhost:5000`.
 
 ## Usage
 
-This project is now a web application. The recommended way to run it is using Docker.
+1.  **Register:** When you first access the application, you will be redirected to the login page. Click the link to register a new account.
+2.  **Login:** Log in with your newly created credentials.
+3.  **Fetch Posts:** On the main page, select a platform from the dropdown menu (e.g., "Instagram") and enter one or more usernames separated by commas. Click "Fetch Posts".
+4.  **View Progress:** You will see a real-time progress bar as the application fetches data for each user.
+5.  **View Data:** Once fetching is complete, the page will reload, and you will see the newly collected posts in the list.
+6.  **View Dashboard:** Click the "Dashboard" link in the navigation bar to see a visual breakdown of the data you have collected.
 
-1. **Build the Docker image:**
-   ```sh
-   docker build -t media-viewer .
-   ```
+## Running Tests
 
-2. **Run the Docker container:**
-   ```sh
-   docker run -p 5000:5000 -v $(pwd)/media_data.db:/app/media_data.db media-viewer
-   ```
-   This command will start the application and make it available at `http://localhost:5000`. It also mounts the database file from your host machine into the container, so your data persists across container restarts.
+A comprehensive test suite is included to ensure the application is working correctly. To run the tests, make sure you have set up a local development environment and installed all dependencies.
 
-3. **Access the application:**
-   Open your web browser and navigate to `http://localhost:5000`. You will be prompted to register an account and log in.
-
-## Development
-
-For development, you can run the Flask development server directly:
-
-1. **Install dependencies:**
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-2. **Run the development server:**
-   ```sh
-   python app.py
-   ```
-
-1. **Install PyInstaller:**
-   ```sh
-   pip install pyinstaller
-   ```
-
-2. **Build the executable:**
-   Run the following command in the repository's root directory:
-   ```sh
-   pyinstaller --onefile --name InstagramPrivSniffer src/privateMediaViewer.py
-   ```
-   The executable will be created in the `dist` folder.
-
-   **Note for Windows on ARM:** To build for Windows on ARM, you must run this command on a Windows on ARM machine with a native ARM64 version of Python and PyInstaller installed.
-
-<br>
-
-## PROOF
-
-You are **legally authorized** to test this tool on my private Instagram account: [@keyloggerluvr](https://www.instagram.com/keyloggerluvr).
-This account is mine, and I give **full consent** for testing purposes only.
-> ⚠️ Please use ethically and do not violate Instagram's Terms of Service.
-
-<br>
-
-## PRIVACY & LEGALITY
-
-This tool uses **only publicly accessible data** and does **not bypass** any security mechanisms.  
-It relies on the documented behavior of Instagram's [Collaboration feature](https://help.instagram.com/3526836317546926).  
-Meta (Instagram) confirms that collaborative posts are **intended to be public**, even if one collaborator has a private account.
-
-<br>
-
-## DISCLAIMER
-
-This project is for **educational and research purposes** only.  
-The author is **not responsible for misuse**.  
-Please use responsibly and follow Instagram’s Terms of Service.
-
-<br>
-
-## LICENSE
-
-© 2025 [Obitouka](https://github.com/obitouka). All rights reserved.  
-This tool is licensed under the **MIT License**.  
-If you build upon this project, please give appropriate credit.
+Then, from the root of the project directory, run:
+```sh
+python -m pytest
+```
