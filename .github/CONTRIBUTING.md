@@ -12,7 +12,7 @@ You can help by **fixing the code** or **reporting bugs**. (Currently not lookin
 
 ## Issues
 
-- **Before adding or requesting any feature**, please create an issue first using the [add or request feature issue](https://github.com/obitouka/InstagramPrivSniffer/issues). This helps discuss the idea and get approval before you start working on it.
 - Found a bug? Open an [bug issue](https://github.com/obitouka/InstagramPrivSniffer/issues).
+- **Before adding or requesting any feature**, please create an issue first using the [add or request feature issue](https://github.com/obitouka/InstagramPrivSniffer/issues). This helps discuss the idea and get approval before you start working on it.
 - Suggestions and feedback are always welcome.
 
