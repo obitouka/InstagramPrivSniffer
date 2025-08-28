@@ -1,45 +1,12 @@
-"""
-Copyright (c) 2025 obitouka
-See the file 'LICENSE' for copying permission
-"""
-import requests
+import configparser
 
-def get_posts(username):
-    """Fetches collaborated posts for a given Instagram username."""
-    url = f"https://www.instagram.com/api/v1/users/web_profile_info/?username={username}"
-    headers = {
-        "X-IG-App-ID": "936619743392459",
-        "Referer": f"https://www.instagram.com/{username}/",
-    }
-
-    try:
-        response = requests.get(url, headers=headers)
-        if response.status_code != 200:
-            print(f"Failed to fetch data: Status code {response.status_code}")
-            return None
-
-        user_data = response.json()["data"]["user"]
-
-        if user_data.get("is_private"):
-            print("The profile is private. Fetching collaborated posts...")
-        else:
-            print("The profile is public. Fetching collaborated posts...")
-
-        edges = user_data["edge_owner_to_timeline_media"]["edges"]
-
-        if not edges:
-            print("No collaborated posts found.")
-            return []
-
-        posts = [f"https://www.instagram.com/p/{edge['node']['shortcode']}" for edge in edges]
-        return posts
-
-    except requests.exceptions.RequestException as e:
-        print(f"An error occurred during the request: {e}")
-    except KeyError:
-        print("Could not retrieve user data. The profile may not exist or there was an API change.")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+def load_config():
+    """Loads proxy settings from config.ini."""
+    config = configparser.ConfigParser()
+    config.read('config.ini')
+    proxy = config.get('Settings', 'proxy', fallback=None)
+    if proxy:
+        return {'http': proxy, 'https': proxy}
     return None
 
 def save_posts_to_file(username, posts):
@@ -55,11 +22,19 @@ def save_posts_to_file(username, posts):
 
 def main():
     """Main function to run the script."""
+    # This function is now deprecated in favor of the GUI.
+    # It is kept for backwards compatibility and simple command-line usage.
+    print("Running in command-line mode. For more features, please use the GUI (run gui.py).")
+
+    from plugins.instagram import InstagramPlugin
+    instagram_plugin = InstagramPlugin()
+
+    proxies = load_config()
     username = input("Enter Instagram username: ")
     if not username:
         return
 
-    posts = get_posts(username)
+    posts = instagram_plugin.get_posts(username, proxies=proxies)
 
     if posts is not None:
         if posts:
@@ -71,9 +46,12 @@ def main():
             save_option = input("Save posts to a file? (y/n): ").lower()
             if save_option == 'y':
                 save_posts_to_file(username, posts)
+
+            download_option = input("Download media? (y/n): ").lower()
+            if download_option == 'y':
+                instagram_plugin.download_posts(username, posts, proxies=proxies)
         else:
-            # This case is handled inside get_posts, but we keep it for clarity
-            pass
+            print("No collaborated posts found.")
 
 if __name__ == "__main__":
     main()
