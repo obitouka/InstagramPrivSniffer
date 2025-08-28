@@ -29,17 +29,35 @@
 
 ## Usage
 
-Run the script from your terminal:
-```sh
-python src/privateMediaViewer.py
-```
-You will be prompted to enter an Instagram username. The script will then fetch and display the collaborated posts.
+This project is now a web application. The recommended way to run it is using Docker.
 
-![Example](./img/sample.jpg)
+1. **Build the Docker image:**
+   ```sh
+   docker build -t media-viewer .
+   ```
 
-## Building from Source
+2. **Run the Docker container:**
+   ```sh
+   docker run -p 5000:5000 -v $(pwd)/media_data.db:/app/media_data.db media-viewer
+   ```
+   This command will start the application and make it available at `http://localhost:5000`. It also mounts the database file from your host machine into the container, so your data persists across container restarts.
 
-You can create a standalone executable for Windows, macOS, or Linux using `pyinstaller`. This is particularly useful for running the script on a Windows on ARM machine without needing to install Python.
+3. **Access the application:**
+   Open your web browser and navigate to `http://localhost:5000`. You will be prompted to register an account and log in.
+
+## Development
+
+For development, you can run the Flask development server directly:
+
+1. **Install dependencies:**
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+2. **Run the development server:**
+   ```sh
+   python app.py
+   ```
 
 1. **Install PyInstaller:**
    ```sh

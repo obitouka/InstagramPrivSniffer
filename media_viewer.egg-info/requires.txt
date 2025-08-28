@@ -7,5 +7,3 @@ Werkzeug
 Flask-SocketIO
 pytest
 pytest-flask
-gunicorn
-eventlet

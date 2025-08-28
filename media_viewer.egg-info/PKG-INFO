@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: media-viewer
+Version: 1.0
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: PySimpleGUI
+Requires-Dist: instaloader
+Requires-Dist: Flask
+Requires-Dist: Flask-Login
+Requires-Dist: Werkzeug
+Requires-Dist: Flask-SocketIO
+Requires-Dist: pytest
+Requires-Dist: pytest-flask
+Dynamic: license-file
+Dynamic: requires-dist

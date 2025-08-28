@@ -15,9 +15,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the src directory into the container at /app
 COPY src/ ./src/
 
-# Set environment variable for DISPLAY
-# This will need to be configured on the host machine
-ENV DISPLAY=:0
+# Expose the port the app runs on
+EXPOSE 5000
 
-# Run gui.py when the container launches
-CMD ["python", "src/gui.py"]
+# Run the app using Gunicorn with SocketIO support
+CMD ["gunicorn", "--worker-class", "eventlet", "-w", "1", "--bind", "0.0.0.0:5000", "wsgi:socketio"]
