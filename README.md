@@ -27,10 +27,9 @@
   <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-D3FF00.svg?style=plastic" height="30"/> <!-- License: MIT -->  
   <img src="https://img.shields.io/github/stars/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=111111&logo=github" width="140"/> <!-- Stars -->
   <a href="https://github.com/obitouka"><img alt="GitHub Profile" src="https://img.shields.io/badge/GitHub-111111?style=plastic&logo=github&logoColor=FF0000" width="103"/></a> <!-- Github -->
-  <a href="https://www.linkedin.com/in/roshansankalpbehera/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-1987FF?style=plastic&logo=linkedin&logoColor=white" width="90"/></a> <!-- Linkedin -->
   <a href="mailto:obitouka@protonmail.com"><img alt="ProtonMail" src="https://img.shields.io/badge/ProtonMail-782DFF?style=plastic&logo=protonmail&logoColor=white" width="130"/></a> <!-- ProtonMail -->
   <img alt="GitHub forks" src="https://img.shields.io/github/forks/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=111111&logo=github" width="140"/> <!-- Forks -->
-
+  <!-- <a href="https://www.linkedin.com/in/roshansankalpbehera/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-1987FF?style=plastic&logo=linkedin&logoColor=white" width="90"/></a> <!-- Linkedin -->
   
 </div>
 
