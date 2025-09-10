@@ -40,28 +40,34 @@ Even if you have **```0% idea about them```**, see what they don’t want you to
 
 <br>
 
-## INSTALLATION:   
+## INSTALLATION :   
 Click [here](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads/main.zip) to download the ZIP file *or* clone the repository using:
     
     git clone https://github.com/obitouka/InstagramPrivSniffer.git
 
-**Install dependencies:**
-
-    pip install -r requirements.txt
+> [!IMPORTANT]
+> **Install dependencies** before running this tool
+> ```bash
+> pip install -r requirements.txt
+> ```
 
 <br>
 
-## USAGE:  
-Navigate to the InstagramPrivSniffer directory, open a terminal and run it to display the help menu and available CLI arguments:
+## USAGE :  
 
-    python main.py -h
+> [!TIP]
+> Navigate to the InstagramPrivSniffer directory, open a terminal and run it to display the help menu and available CLI arguments:
+> ```bash
+> python main.py -h
+> ```
 
 
-**EXAMPLE:**  
-You have **my permission** to test this command on **my** experimental private Instagram account i.e. [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as a proof that tool works.
-
-    python main.py -n keyloggerluvr
-    
+**EXAMPLE :**
+> [!NOTE]
+> You have **my permission** to test this command on **my** experimental private Instagram account i.e. [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as a proof that tool works.
+> ```bash
+> python main.py -n keyloggerluvr
+> ```    
 
 <br>
 
@@ -69,19 +75,20 @@ You have **my permission** to test this command on **my** experimental private I
 
 <br>
 
-## DISCLAIMER :
+## DISCLAIMER : 
+> [!WARNING]
+> This tool neither bypasses any security measures nor Instagram’s policies. It uses Instagram’s [Collaboration feature](https://help.instagram.com/3526836317546926).
 
-This tool neither bypasses any security measures nor Instagram’s policies. It uses Instagram’s [Collaboration feature](https://help.instagram.com/3526836317546926).
-> ⚠️ **Created for educational purposes only, so please use it ethically. The author is not responsible for any misuse.**
+> [!CAUTION]
+> **Created for educational purposes only, so please use it ethically. The author is not responsible for any misuse.**
 
 <br>
 
-## Contributing
+## CONTRIBUTING : 
 If you wish to contribute, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file.
 
 <br>
 
 ## LICENSE :
-
 Licensed under the [MIT License](LICENSE) © 2025 [obitouka](https://github.com/obitouka).  
 You are free to use, modify, and distribute this project, provided that you **include the original copyright and license notice**.
