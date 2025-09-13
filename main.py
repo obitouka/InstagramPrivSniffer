@@ -14,4 +14,4 @@ if args.name:
     getPosts(args.name)
 '''elif args.version:
     print(f"InstagramPrivSniffer {__version__}")
-'''
+'''instagram.com/p/isaahtavaresz
