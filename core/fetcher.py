@@ -21,7 +21,7 @@ def getPosts(username):
             colorPrint(("[INFO] Invalid user ID", LIGHTGREEN_EX))
         elif response.status_code == 401 :
             colorPrint((f"[ERROR_CODE] 401", RED))
-            colorPrint(("[WARNING] Rate limit added. Try after few hours", YELLOW))
+            colorPrint(("[WARNING] Instagram added rate limit to your IP. Try again later", YELLOW))
         elif response.status_code != 200 :
             colorPrint((f"[ERROR_CODE] {response.status_code}", RED))
             colorPrint(("[ERROR] Something went wrong", RED))
