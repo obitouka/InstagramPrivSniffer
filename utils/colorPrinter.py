@@ -16,11 +16,11 @@ LIGHTYELLOW_EX = Fore.LIGHTYELLOW_EX
 LIGHTBLUE_EX = Fore.LIGHTBLUE_EX
 LIGHTCYAN_EX = Fore.LIGHTCYAN_EX
 LIGHTMAGENTA_EX = Fore.LIGHTMAGENTA_EX
+LIGHTGREEN_EX = Fore.LIGHTGREEN_EX
 
 RESET = Style.RESET_ALL
 
-def colorPrint(text, color=None):
-    if color:
-        print(f"{color}{text}{RESET}")
-    else:
-        print(text)
+def colorPrint(*args):
+    for text, color in args:
+        print(f"{color}{text}{RESET}", end="")
+    print()

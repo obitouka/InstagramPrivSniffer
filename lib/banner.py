@@ -37,4 +37,4 @@ logo = logo.replace("=", f"{RED}={logoCOLOR}")
 logo = logo.replace("*", f"{LIGHTBLACK_EX}*{logoCOLOR}")
 
 def printBanner():
-    colorPrint(logo)
+    colorPrint((logo, RESET))
