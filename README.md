@@ -36,7 +36,7 @@
 ## FEATURE :
 
 **Unlock private Instagram posts? Almost.**  
-Even if you have **```0% idea about them```**, see what they don’t want you to i.e. every **```collaborated post and who they collaborated with```** from a private account, revealed by colllaborating with a public profile **(all without logging in!)**
+Even if you have **```0% idea about them```**, see what they don’t want you to i.e. every **```collaborated post and who they collaborated with```** from a private account, revealed by colllaborating with a public profile
 
 <br>
 
