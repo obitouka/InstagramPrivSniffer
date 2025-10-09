@@ -3,7 +3,7 @@ Copyright (c) 2025 obitouka
 See the file 'LICENSE' for copying permission
 """
 
-from core.fetcher import getPosts
+from core.privMediaFetcher import getPosts
 from lib.banner import printBanner
 from utils.parser import getArguments
 

@@ -8,6 +8,8 @@ import requests
 from utils.colorPrinter import *
 
 def getPosts(username):
+    colorPrint(("Fetching only collaborated posts (if available)...", LIGHTYELLOW_EX))
+
     url = f"https://www.instagram.com/api/v1/users/web_profile_info/?username={username}"
     headers = {
         "X-IG-App-ID": "936619743392459",
@@ -18,7 +20,7 @@ def getPosts(username):
         response = requests.get(url, headers=headers)
         if response.status_code == 404 :
             colorPrint((f"[ERROR_CODE] 404", RED))
-            colorPrint(("[INFO] Invalid user ID", LIGHTGREEN_EX))
+            colorPrint(("[ERROR] Invalid user ID", RED))
         elif response.status_code == 401 :
             colorPrint((f"[ERROR_CODE] 401", RED))
             colorPrint(("[WARNING] Instagram added rate limit to your IP. Try again later", YELLOW))
@@ -29,9 +31,9 @@ def getPosts(username):
         user_data = response.json()["data"]["user"]
 
         if user_data.get("is_private"):
-            colorPrint(("The profile is Private. Fetching only collaborated posts (if available)...", LIGHTYELLOW_EX))
+            colorPrint(("[TYPE]  \t\b", LIGHTCYAN_EX), ("[INFO] ", LIGHTGREEN_EX), ("Private profile", RED))
         else:
-            colorPrint(("The profile is Public. Fetching only collaborated posts (if available)...", LIGHTYELLOW_EX))
+            colorPrint(("[TYPE]  \t\b", LIGHTCYAN_EX), ("[INFO] ", LIGHTGREEN_EX), ("Public profile", RED))
 
         edges = user_data["edge_owner_to_timeline_media"]["edges"]
 
@@ -43,6 +45,9 @@ def getPosts(username):
             post_data  = post_item["node"]
             post_url  = post_data["shortcode"]
             colorPrint(("[POST]  \t\b", LIGHTCYAN_EX), ("[INFO] ", LIGHTGREEN_EX), (f"https://www.instagram.com/p/{post_url}", LIGHTBLUE_EX))
+
+            post_owner  = post_data["owner"]["username"]
+            colorPrint(("[OWNER] \t\b", LIGHTCYAN_EX), ("[INFO] ", LIGHTGREEN_EX), (f"https://www.instagram.com/{post_owner}", LIGHTBLUE_EX))
 
             for collaborator_item  in post_data["edge_media_to_tagged_user"]["edges"]:
                 collaborator_username  = collaborator_item["node"]["user"]["username"]
