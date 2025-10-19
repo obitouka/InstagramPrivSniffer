@@ -86,7 +86,7 @@
 
 ## DISCLAIMER : 
 > [!WARNING]
-> This tool neither bypasses any security measures nor Instagram’s policies. It uses Instagram’s [Collaboration feature](https://help.instagram.com/3526836317546926).
+> This tool neither bypasses any security measures nor Instagram’s policies. It uses Instagram’s [Collaboration feature](https://help.instagram.com/3526836317546926). When a **private account** _collaborates_ with **public account**, those posts get revealed via this tool.
 
 > [!CAUTION]
 > **Created for educational purposes only, so please use it ethically. The author is not responsible for any misuse.**
