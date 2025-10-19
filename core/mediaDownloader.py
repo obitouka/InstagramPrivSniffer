@@ -67,8 +67,8 @@ def downloadMedia(post_url):
     filename = "video.mp4" if is_video else "image.jpg"
 
     if r.status_code == 200:
-        with open(f"downloads\{filename}", "wb") as f:
+        with open(f"InstaDownloads\{filename}", "wb") as f:
             f.write(r.content)
-        colorPrint(("[SUCCESS] \t", LIGHTGREEN_EX), ("Downloaded ", LIGHTYELLOW_EX), (f"{filename}", LIGHTBLUE_EX))
+        colorPrint(("[SUCCESS] \t", LIGHTGREEN_EX), ("Downloaded ", LIGHTYELLOW_EX), (f"{filename} ", LIGHTBLUE_EX), ("at 'InstaDownloads' folder", LIGHTYELLOW_EX))
     else:
         colorPrint((f"[{r.status_code}] \t\t\b", RED),("[WARNING] \t", YELLOW), (f"Failed to download media", RED))

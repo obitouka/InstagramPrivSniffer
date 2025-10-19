@@ -21,7 +21,7 @@
   
   <!-- Badges Row 1 -->
   <img alt="Built with Python" src="https://img.shields.io/badge/Built_with-Python-1987FF?logo=python&logoColor=white&style=plastic" height="30"/> <!-- PYTHON -->
-  <img alt="Version" src="https://img.shields.io/badge/Version-2.2.3-D3FF00?style=plastic" height="30"/> <!-- Version -->
+  <img alt="Version" src="https://img.shields.io/badge/Version-2.2.4-D3FF00?style=plastic" height="30"/> <!-- Version -->
   <a href="https://awesome.re" title="Awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" height="30"/></a> <!-- Awesome -->
   <img alt="Category OSINT" src="https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic" height="30"/> <!-- Category: OSINT -->
   <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-BD00FF.svg?style=plastic" height="30"/> <!-- License: MIT -->  
@@ -35,46 +35,49 @@
 
 ## FEATURE :
 
-**Unlock private Instagram posts? Almost.**  
-Even if you have **```0% idea about them```**, see what they don’t want you to i.e. every **```collaborated post and who they collaborated with```** from a private account, revealed by collaborating with a public profile
+- **`Access private account posts` revealed via collaborating with public account**
+- **Download & view media `without login`**
 
 <br>
 
 ## INSTALLATION :   
-Click [here](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads/main.zip) to download the ZIP file *or* clone the repo in cmd using:
-    
-    git clone https://github.com/obitouka/InstagramPrivSniffer.git
-
-> [!IMPORTANT]
-> **Install dependencies** in the repo root folder (where `requirements.txt` exists) before running this tool:
-> ```bash
-> cd InstagramPrivSniffer
-> python -m pip install -r requirements.txt
-> ```
-
+1. **Clone the tool**  
+   - Click [here](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads/main.zip) to download the ZIP file  
+   - *Or* clone the repository via command line:
+     ```bash
+     git clone https://github.com/obitouka/InstagramPrivSniffer.git
+     ```
+   
+2. **Install dependencies**
+   - Navigate to the repository root folder (where requirements.txt is located) and run:
+     ```bash
+     python -m pip install -r requirements.txt
+     ```
+  
 <br>
 
 ## USAGE :  
-### To view available commands
+### View available commands to fetch data
 > [!TIP]
-> Navigate to the `InstagramPrivSniffer` directory, open a terminal and run:
+> Navigate to the `InstagramPrivSniffer` root folder in a terminal and run:
 > ```bash
-> # To see help menu
 > python main.py -h
 > ```
-> 
+
 <br>
 
-### To run the program using those commands
+### How to use those commands
 > [!NOTE]
-> You have **my permission** to test this command on **my** experimental private Instagram account i.e. [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as a proof that tool works.
-> ```bash
-> python main.py -n keyloggerluvr
-> ```
-Or replace `<username>` with the one you require:
-```bash
-python main.py -n <username>
-```  
+> You have **my permission** to test this command on **my** experimental private Insta account [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as a proof that tool works.  
+> 1. First write the following to access private account post links
+>    ```bash
+>    python main.py -n keyloggerluvr
+>    ```
+> 2. Then use this to download and view post without login
+>    ```bash
+>    python main.py -d https://www.instagram.com/keyloggerluvr/p/DL47hX4olz8wRQXBQ4HAaEmba9x7nC9HCSm4M80
+>    ```  
+
 <br>
 
 ![Example](./assets/img/sample.png)
@@ -97,4 +100,4 @@ If you wish to contribute, please read the [CONTRIBUTING.md](.github/CONTRIBUTIN
 
 ## LICENSE :
 Licensed under the [MIT License](LICENSE) © 2025 [obitouka](https://github.com/obitouka).  
-You are free to use, modify, and distribute this project, provided that you **include the original copyright and license notice**.
+You are free to use, modify, and distribute this project, provided that you **give credit, include the original copyright and license notice**.

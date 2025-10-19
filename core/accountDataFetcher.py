@@ -46,7 +46,9 @@ def account_type(user_data):
 
 
 def get_posts(user_data):
+    counter = 1
     edges = user_data["edge_owner_to_timeline_media"]["edges"]
+
     if not edges:
         colorPrint(("[POST]  \t\b", LIGHTCYAN_EX), ("[INFO] \t", LIGHTGREEN_EX), ("No posts found", RED))
     else: 
@@ -57,9 +59,9 @@ def get_posts(user_data):
             post_owner  = post_data["owner"]["username"]
 
             if is_video:
-                colorPrint(("[VIDEO]  \t\b", LIGHTCYAN_EX), ("[INFO] \t", LIGHTGREEN_EX), (f"https://www.instagram.com/{post_owner}/reel/{post_url}", LIGHTBLUE_EX))
+                colorPrint((f"[{counter}_VIDEO]  \t\b", LIGHTCYAN_EX), ("[INFO] \t", LIGHTGREEN_EX), (f"https://www.instagram.com/{post_owner}/reel/{post_url}", LIGHTBLUE_EX))
             else:
-                colorPrint(("[IMAGE]  \t\b", LIGHTCYAN_EX), ("[INFO] \t", LIGHTGREEN_EX), (f"https://www.instagram.com/{post_owner}/p/{post_url}", LIGHTBLUE_EX))
+                colorPrint((f"[{counter}_IMAGE]  \t\b", LIGHTCYAN_EX), ("[INFO] \t", LIGHTGREEN_EX), (f"https://www.instagram.com/{post_owner}/p/{post_url}", LIGHTBLUE_EX))
 
             colorPrint(("[OWNER] \t\b", LIGHTCYAN_EX), ("[INFO] \t", LIGHTGREEN_EX), (f"https://www.instagram.com/{post_owner}", LIGHTBLUE_EX))
 
@@ -68,3 +70,4 @@ def get_posts(user_data):
                 colorPrint(("[COLLABORATOR] ", LIGHTCYAN_EX), ("[INFO] \t", LIGHTGREEN_EX), (f"https://www.instagram.com/{collaborator_username}", LIGHTBLUE_EX))
             
             print()
+            counter += 1
