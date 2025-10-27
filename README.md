@@ -21,9 +21,9 @@
   
   <!-- Badges Row 1 -->
   <img alt="Built with Python" src="https://img.shields.io/badge/Built_with-Python-1987FF?logo=python&logoColor=white&style=plastic" height="30"/> <!-- PYTHON -->
-  <img alt="Version" src="https://img.shields.io/badge/Version-2.2.4-D3FF00?style=plastic" height="30"/> <!-- Version -->
-  <a href="https://awesome.re" title="Awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" height="30"/></a> <!-- Awesome -->
   <img alt="Category OSINT" src="https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic" height="30"/> <!-- Category: OSINT -->
+  <img alt="Version" src="https://img.shields.io/badge/Version-2.3.0-D3FF00?style=plastic" height="30"/> <!-- Version -->
+  <a href="https://awesome.re" title="Awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" height="30"/></a> <!-- Awesome -->
   <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-BD00FF.svg?style=plastic" height="30"/> <!-- License: MIT -->  
   <img src="https://img.shields.io/github/stars/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=111111&logo=github" width="150"/> <!-- Stars -->
   <a href="https://github.com/obitouka"><img alt="GitHub Profile" src="https://img.shields.io/badge/GitHub-111111?style=plastic&logo=github&logoColor=FF0000" width="103"/></a> <!-- Github -->
