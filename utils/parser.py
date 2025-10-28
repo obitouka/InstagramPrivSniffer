@@ -21,8 +21,8 @@ def getArguments():
     )
 
     parser.add_argument(
-        "-d", "--download",
-        metavar="POST_URL",
+        "-d", "--dload",
+        metavar="POSTURL",
         help="Enter post URL to download media", 
         type=str
     )

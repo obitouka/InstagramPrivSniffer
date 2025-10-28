@@ -11,7 +11,7 @@ instagramCOLOR = MAGENTA
 privSnifferCOLOR = RED
 
 ver = CYAN + ITALIC + __version__ + ITALIC_OFF + CYAN + privSnifferCOLOR
-name = ITALIC+ORANGE
+name = ORANGE
 s = RED + "@" + logoCOLOR
 
 logo = fr"""{logoCOLOR}
