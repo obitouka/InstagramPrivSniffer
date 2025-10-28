@@ -69,14 +69,15 @@
 ### How to use those commands
 > [!NOTE]
 > You have **my permission** to test this command on **my** experimental private Insta account [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as a proof that tool works.  
-> 1. First write the following to access private account post links
->    ```bash
->    python main.py -n keyloggerluvr
->    ```
-> 2. Then use this to download and view post without login
->    ```bash
->    python main.py -d https://www.instagram.com/keyloggerluvr/p/DL47hX4olz8wRQXBQ4HAaEmba9x7nC9HCSm4M80
->    ```  
+>
+> Use this to access private account's post links
+>  ```bash
+>  python main.py -n keyloggerluvr
+>  ```
+>  Or use this to download and view post without login
+>  ```bash
+>  python main.py -d https://www.instagram.com/keyloggerluvr/p/DL47hX4olz8wRQXBQ4HAaEmba9x7nC9HCSm4M80
+>  ```  
 
 <br>
 
