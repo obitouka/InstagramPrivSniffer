@@ -22,7 +22,7 @@
   <!-- Badges Row 1 -->
   <img alt="Built with Python" src="https://img.shields.io/badge/Built_with-Python-1987FF?logo=python&logoColor=white&style=plastic" height="30"/> <!-- PYTHON -->
   <img alt="Category OSINT" src="https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic" height="30"/> <!-- Category: OSINT -->
-  <img alt="Version" src="https://img.shields.io/badge/Version-2.3.0-D3FF00?style=plastic" height="30"/> <!-- Version -->
+  <img alt="Version" src="https://img.shields.io/badge/Version-2.3.1-D3FF00?style=plastic" height="30"/> <!-- Version -->
   <a href="https://awesome.re" title="Awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" height="30"/></a> <!-- Awesome -->
   <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-BD00FF.svg?style=plastic" height="30"/> <!-- License: MIT -->  
   <img src="https://img.shields.io/github/stars/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=111111&logo=github" width="150"/> <!-- Stars -->
@@ -49,7 +49,7 @@
      ```
    
 2. **Install dependencies**
-   - Navigate to the repository root folder (where requirements.txt is located) and run:
+   - Navigate to the repository root folder (where requirements.txt is located) in command line and run:
      ```bash
      python -m pip install -r requirements.txt
      ```
@@ -59,7 +59,7 @@
 ## USAGE :  
 ### View available commands to fetch data
 > [!TIP]
-> Navigate to the `InstagramPrivSniffer` root folder in a terminal and run:
+> Navigate to the `InstagramPrivSniffer` root folder in a command line and run:
 > ```bash
 > python main.py -h
 > ```
@@ -70,14 +70,14 @@
 > [!NOTE]
 > You have **my permission** to test this command on **my** experimental private Insta account [@keyloggerluvr](https://www.instagram.com/keyloggerluvr) as a proof that tool works.  
 >
-> Use this to access private account's post links
+> Use this to access private account post links
 >  ```bash
 >  python main.py -n keyloggerluvr
 >  ```
 >  Or use this to download and view post without login
 >  ```bash
 >  python main.py -d https://www.instagram.com/keyloggerluvr/p/DL47hX4olz8wRQXBQ4HAaEmba9x7nC9HCSm4M80
->  ```  
+>  ```     
 
 <br>
 

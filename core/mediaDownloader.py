@@ -8,10 +8,10 @@ from utils.colorPrinter import *
 
 is_video = None
 media_url = None
-
+file_name = None
 
 def mediaFetcher(url):
-    global is_video, media_url
+    global is_video, media_url, file_name
     parts = url.split("/")
     
     if len(parts) < 6 or parts[4] not in ("p", "reel"):
@@ -31,6 +31,7 @@ def mediaFetcher(url):
 
     username = parts[3]
     shortcode = parts[5]
+    file_name = shortcode + (".mp4" if parts[4] == "reel" else ".png")
     
     colorPrint(GREEN, "[INFO] \t\t", LIGHT_YELLOW_EX, "Fetching...")
     
@@ -62,7 +63,7 @@ def mediaFetcher(url):
 
 
 def downloadMedia(post_url):
-    global is_video, media_url
+    global is_video, media_url, file_name
     mediaFetcher(post_url)
 
     if not media_url:
@@ -81,16 +82,14 @@ def downloadMedia(post_url):
         }
     )
 
-    filename = "video.mp4" if is_video else "image.jpg"
-
     if r.status_code == 200:
-        with open(f"InstaDownloads\\{filename}", "wb") as f:
+        with open(f"InstaDownloads\\{file_name}", "wb") as f:
             f.write(r.content)
 
         colorPrint(
             GREEN, "[SUCCESS] \t",
             LIGHT_YELLOW_EX, "Downloaded ",
-            LIGHT_BLUE_EX, ITALIC, f"{filename} ", ITALIC_OFF,
+            LIGHT_BLUE_EX, ITALIC, f"{file_name} ", ITALIC_OFF,
             LIGHT_YELLOW_EX, f"at {ITALIC}'InstaDownloads'{ITALIC_OFF} folder"
         )
     else:

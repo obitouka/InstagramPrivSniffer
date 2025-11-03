@@ -13,6 +13,6 @@ args = getArguments()
 if args.name:
     printBanner()
     fetch_data(args.name)
-elif args.download:
+elif args.dload:
     printBanner()
-    downloadMedia(args.download)
+    downloadMedia(args.dload)
