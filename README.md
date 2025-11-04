@@ -20,16 +20,16 @@
   <br>
   
   <!-- Badges Row 1 -->
-  <img alt="Built with Python" src="https://img.shields.io/badge/Built_with-Python-1987FF?logo=python&logoColor=white&style=plastic" height="30"/> <!-- PYTHON -->
-  <img alt="Category OSINT" src="https://img.shields.io/badge/Category-OSINT-ff0004?style=plastic" height="30"/> <!-- Category: OSINT -->
-  <img alt="Version" src="https://img.shields.io/badge/Version-2.3.1-D3FF00?style=plastic" height="30"/> <!-- Version -->
+  <img alt="Built with Python" src="https://img.shields.io/badge/Built_with-Python-26A5E4?logo=python&logoColor=white&style=plastic" height="30"/> <!-- PYTHON -->
+  <img alt="Version" src="https://img.shields.io/badge/Version-2.4.1-D3FF00?style=plastic" height="30"/> <!-- Version -->
   <a href="https://awesome.re" title="Awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" height="30"/></a> <!-- Awesome -->
-  <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-BD00FF.svg?style=plastic" height="30"/> <!-- License: MIT -->  
+  <img alt="Category OSINT" src="https://img.shields.io/badge/Category-OSINT-BD00FF?style=plastic" height="30"/> <!-- Category: OSINT -->
+  <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-ff0004.svg?style=plastic" height="30"/> <!-- License: MIT -->  
   <img src="https://img.shields.io/github/stars/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=111111&logo=github" width="150"/> <!-- Stars -->
+  <a href="https://t.me/voidologist"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-26A5E4?style=plastic&logo=telegram&logoColor=white" width="135"/></a><!-- Telegram -->
   <a href="https://github.com/obitouka"><img alt="GitHub Profile" src="https://img.shields.io/badge/GitHub-111111?style=plastic&logo=github&logoColor=FF0000" width="103"/></a> <!-- Github -->
   <a href="mailto:obitouka@protonmail.com"><img alt="ProtonMail" src="https://img.shields.io/badge/ProtonMail-782DFF?style=plastic&logo=protonmail&logoColor=white" width="135"/></a> <!-- ProtonMail -->
   <img alt="GitHub forks" src="https://img.shields.io/github/forks/obitouka/InstagramPrivSniffer?style=plastic&color=ffffff&labelColor=111111&logo=github" width="145"/> <!-- Forks -->
-  <!-- <a href="https://www.linkedin.com/in/roshansankalpbehera/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-1987FF?style=plastic&logo=linkedin&logoColor=white" width="90"/></a> <!-- Linkedin -->
   
 </div>
 

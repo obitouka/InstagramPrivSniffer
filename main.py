@@ -4,7 +4,7 @@ See the file 'LICENSE' for copying permission
 """
 
 from core.accountDataFetcher import fetch_data 
-from core.mediaDownloader import downloadMedia
+from core.mediaDownloader import download_media
 from lib.banner import printBanner
 from utils.parser import getArguments
 
@@ -15,4 +15,4 @@ if args.name:
     fetch_data(args.name)
 elif args.dload:
     printBanner()
-    downloadMedia(args.dload)
+    download_media(args.dload)
