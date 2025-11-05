@@ -85,12 +85,16 @@
 
 <br>
 
-## DISCLAIMER : 
-> [!WARNING]
-> This tool neither bypasses any security measures nor Instagram’s policies. It uses Instagram’s [Collaboration feature](https://help.instagram.com/3526836317546926). When a **private account** _collaborates_ with **public account**, those posts get revealed via this tool.
+## DISCLAIMER  
+> [!IMPORTANT]  
+> This tool neither bypasses any security measures. It just uses [Collaboration feature](https://help.instagram.com/3526836317546926), where posts from a private account can be seen publicly if they collaborate with a public account.  
 
-> [!CAUTION]
-> **Created for educational purposes only, so please use it ethically. The author is not responsible for any misuse.**
+> [!NOTE]  
+> **Meta Security confirmed (Bug Bounty response):**  
+> “It's intended for collaboration reels to be visible publicly even if one of the collaborators is a private account.”  
+
+> [!CAUTION]  
+> **Created for educational purposes only, so please use it ethically. The developer is not responsible for any misuse.**
 
 <br>
 

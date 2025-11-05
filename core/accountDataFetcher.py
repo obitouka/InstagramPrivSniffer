@@ -12,6 +12,7 @@ time = datetime.now().strftime("%H:%M:%S")
 def fetch_data(username):
     colorPrint(
         CYAN, f"[{time()}] \t",
+        GREEN, "[INFO] \t\t\b", 
         LIGHT_YELLOW_EX, "Fetching only collaborated posts (if available)..."
     )
     
