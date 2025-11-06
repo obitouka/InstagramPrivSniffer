@@ -10,11 +10,10 @@ from datetime import datetime
 is_video = None
 media_url = None
 file_name = None
-user_name = None
 time = datetime.now().strftime("%H:%M:%S")
 
 def fetch_media(url):
-    global is_video, media_url, file_name, user_name
+    global is_video, media_url, file_name
     parts = url.split("/")
     
     if len(parts) < 6 or parts[4] not in ("p", "reel"):
@@ -36,7 +35,7 @@ def fetch_media(url):
 
     user_name = parts[3]
     shortcode = parts[5]
-    file_name = shortcode.replace('-', '')[:20]  + (".mp4" if parts[4] == "reel" else ".png")
+    file_name = f"{user_name}-{'reel' if parts[4] == 'reel' else 'post'}-{shortcode.replace('-', '')[:10]}{'.mp4' if parts[4] == 'reel' else '.png'}"
     
     colorPrint(
         CYAN, f"[{time()}] \t",
@@ -73,7 +72,7 @@ def fetch_media(url):
 
 
 def download_media(post_url):
-    global is_video, media_url, file_name, user_name
+    global is_video, media_url, file_name
     fetch_media(post_url)
 
     if not media_url:
@@ -105,7 +104,7 @@ def download_media(post_url):
             CYAN, f"[{time()}] \t",
             GREEN, "[SUCCESS] \t",
             LIGHT_YELLOW_EX, "Downloaded ",
-            LIGHT_BLUE_EX, ITALIC, f"{user_name}-{'video' if is_video else 'image'}-{file_name} ", ITALIC_OFF,
+            LIGHT_BLUE_EX, ITALIC, f"{file_name} ", ITALIC_OFF,
             LIGHT_YELLOW_EX, f"at {ITALIC}'InstaDownloads'{ITALIC_OFF} folder"
         )
     else:
