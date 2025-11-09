@@ -99,7 +99,8 @@
 <br>
 
 ## CONTRIBUTING : 
-If you wish to contribute, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file.
+If you wish to contribute, report a bug or report a security issue, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file for guidelines.
+For any legal concerns regarding this project, please contact me directly before taking any action.
 
 <br>
 
