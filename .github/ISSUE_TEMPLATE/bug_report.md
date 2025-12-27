@@ -9,8 +9,8 @@ labels: bug
 Briefly describe the problem.
 
 **Steps to Reproduce:**
-1. Run the script
-2. Enter username: [example]
+1. Opend terminal and installed requirements
+2. Entered username(don't at all mention the username, it may lead to privacy problem which i care about)
 3. Describe what happened
 
 **Expected Behavior:**
