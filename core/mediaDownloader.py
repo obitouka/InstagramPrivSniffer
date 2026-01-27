@@ -46,7 +46,10 @@ def fetch_media(url):
     r = requests.get(
         f"https://www.instagram.com/api/v1/users/web_profile_info/?username={user_name}",
         headers={
-            "X-IG-App-ID": "936619743392459"
+            "X-IG-App-ID": "936619743392459",
+            "User-Agent": "Mozilla/5.0",
+            "Accept-Language": 	"en-US,en;q=0.5",
+            "Accept": "*/*",
         }
     )
 

@@ -20,6 +20,9 @@ def fetch_data(username):
         url = f"https://www.instagram.com/api/v1/users/web_profile_info/?username={username}"
         headers = {
             "X-IG-App-ID": "936619743392459",
+            "User-Agent": "Mozilla/5.0",
+            "Accept-Language": 	"en-US,en;q=0.5",
+            "Accept": "*/*",
         }
         response = requests.get(url, headers=headers)
 
@@ -49,7 +52,7 @@ def error_handler(response):
             RED, "[ERROR] \t\t",
             RED, "User not found"
         )
-    elif response.status_code == 401:
+    elif response.status_code == 429:
         colorPrint(
             CYAN, f"[{time()}] \t",
             RED, "[401] \t\t\b",

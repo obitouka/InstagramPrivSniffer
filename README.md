@@ -21,7 +21,7 @@
   
   <!-- Badges Row 1 -->
   <img alt="Built with Python" src="https://img.shields.io/badge/Built_with-Python-26A5E4?logo=python&logoColor=white&style=plastic" height="30"/> <!-- PYTHON -->
-  <img alt="Version" src="https://img.shields.io/badge/Version-2.4.1-D3FF00?style=plastic" height="30"/> <!-- Version -->
+  <img alt="Version" src="https://img.shields.io/badge/Version-2.4.2-D3FF00?style=plastic" height="30"/> <!-- Version -->
   <a href="https://awesome.re" title="Awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" height="30"/></a> <!-- Awesome -->
   <img alt="Category OSINT" src="https://img.shields.io/badge/Category-OSINT-BD00FF?style=plastic" height="30"/> <!-- Category: OSINT -->
   <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-ff0004.svg?style=plastic" height="30"/> <!-- License: MIT -->  
@@ -82,6 +82,12 @@
 <br>
 
 ![Example](./assets/img/sample.png)
+
+<br>
+
+## FAQ
+- **Why “No posts found” even when the account has posts?**  
+Please refer [issues14](https://github.com/obitouka/InstagramPrivSniffer/issues/14)
 
 <br>
 
