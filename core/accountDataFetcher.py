@@ -3,15 +3,17 @@ Copyright (c) 2025 obitouka
 See the file 'LICENSE' for copying permission
 """
 
-import requests
+from curl_cffi import requests
 from utils.colorPrinter import *
 from datetime import datetime
 
-time = datetime.now().strftime("%H:%M:%S")
+
+def get_time():
+    return datetime.now().strftime("%H:%M:%S")
 
 def fetch_data(username):
     colorPrint(
-        CYAN, f"[{time()}] \t",
+        CYAN, f"[{get_time()}] \t",
         GREEN, "[INFO] \t\t\b", 
         LIGHT_YELLOW_EX, "Fetching only collaborated posts (if available)..."
     )
@@ -20,9 +22,6 @@ def fetch_data(username):
         url = f"https://www.instagram.com/api/v1/users/web_profile_info/?username={username}"
         headers = {
             "X-IG-App-ID": "936619743392459",
-            "User-Agent": "Mozilla/5.0",
-            "Accept-Language": 	"en-US,en;q=0.5",
-            "Accept": "*/*",
         }
         response = requests.get(url, headers=headers)
 
@@ -37,7 +36,7 @@ def fetch_data(username):
         
     except Exception as e:
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             RED, f"[{response.status_code}] \t\t\b",
             YELLOW, "[WARNING] \t",
             RED, "Failed to fetch account data"
@@ -47,21 +46,21 @@ def fetch_data(username):
 def error_handler(response):
     if response.status_code == 404:
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             RED, "[404] \t\t\b",
             RED, "[ERROR] \t\t",
             RED, "User not found"
         )
     elif response.status_code == 429:
         colorPrint(
-            CYAN, f"[{time()}] \t",
-            RED, "[401] \t\t\b",
+            CYAN, f"[{get_time()}] \t",
+            RED, "[429] \t\t\b",
             YELLOW, "[WARNING] \t",
             RED, "Instagram added rate limit to your IP. Try again later"
         )
     else:
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             RED, f"[{response.status_code}] \t\t\b",
             RED, "[ERROR] \t\t",
             RED, "Something went wrong"
@@ -71,13 +70,13 @@ def error_handler(response):
 def account_type(user_data):
     if user_data.get("is_private"):
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             GREEN, "[TYPE]  \t\b",
             RED, "Private profile\n"
         )
     else:
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             GREEN, "[TYPE]  \t\b",
             RED, "Public profile\n"
         )
@@ -88,7 +87,7 @@ def get_posts(user_data):
 
     if not edges:
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             GREEN, "[POST]  \t\b",
             RED, "No posts found"
         )
@@ -103,19 +102,19 @@ def get_posts(user_data):
 
             if is_video:
                 colorPrint(
-                    CYAN, f"[{time()}] \t",
+                    CYAN, f"[{get_time()}] \t",
                     GREEN, "[VIDEO]  \t\b",
                     LIGHT_BLUE_EX, f"https://www.instagram.com/{post_owner}/reel/{post_url}"
                 )
             else:
                 colorPrint(
-                    CYAN, f"[{time()}] \t",
+                    CYAN, f"[{get_time()}] \t",
                     GREEN, "[IMAGE]  \t\b",
                     LIGHT_BLUE_EX, f"https://www.instagram.com/{post_owner}/p/{post_url}"
                 )
 
             colorPrint(
-                CYAN, f"[{time()}] \t",
+                CYAN, f"[{get_time()}] \t",
                 GREEN, "[OWNER] \t\b",
                 LIGHT_BLUE_EX, f"https://www.instagram.com/{post_owner}"
             )
@@ -123,12 +122,9 @@ def get_posts(user_data):
             for collaborator_item in post_data["edge_media_to_tagged_user"]["edges"]:
                 collaborator_username = collaborator_item["node"]["user"]["username"]
                 colorPrint(
-                    CYAN, f"[{time()}] \t",
+                    CYAN, f"[{get_time()}] \t",
                     GREEN, "[COLLAB] \t\b",
                     LIGHT_BLUE_EX, f"https://www.instagram.com/{collaborator_username}"
                 )
             
             print()
-
-def time():
-    return datetime.now().strftime("%H:%M:%S")

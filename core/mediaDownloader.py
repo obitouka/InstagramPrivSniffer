@@ -3,14 +3,16 @@ Copyright (c) 2025 obitouka
 See the file 'LICENSE' for copying permission
 """
 
-import requests
+from curl_cffi import requests
 from utils.colorPrinter import *
 from datetime import datetime
 
 is_video = None
 media_url = None
 file_name = None
-time = datetime.now().strftime("%H:%M:%S")
+
+def get_time():
+    return datetime.now().strftime("%H:%M:%S")
 
 def fetch_media(url):
     global is_video, media_url, file_name
@@ -18,12 +20,12 @@ def fetch_media(url):
     
     if len(parts) < 6 or parts[4] not in ("p", "reel"):
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             RED, "[ERROR] \t",
             RED, "Invalid URL format"
         )
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             YELLOW, "[EXAMPLE] \t",
             LIGHT_BLUE_EX, 
             '''https://www.instagram.com/keyloggerluvr/p/V2tgdUTWI6kLka3N/ 
@@ -38,7 +40,7 @@ def fetch_media(url):
     file_name = f"{user_name}-{'reel' if parts[4] == 'reel' else 'post'}-{shortcode.replace('-', '')[:10]}{'.mp4' if parts[4] == 'reel' else '.png'}"
     
     colorPrint(
-        CYAN, f"[{time()}] \t",
+        CYAN, f"[{get_time()}] \t",
         GREEN, "[INFO] \t\t", 
         LIGHT_YELLOW_EX, "Fetching..."
     )
@@ -47,9 +49,6 @@ def fetch_media(url):
         f"https://www.instagram.com/api/v1/users/web_profile_info/?username={user_name}",
         headers={
             "X-IG-App-ID": "936619743392459",
-            "User-Agent": "Mozilla/5.0",
-            "Accept-Language": 	"en-US,en;q=0.5",
-            "Accept": "*/*",
         }
     )
 
@@ -67,7 +66,7 @@ def fetch_media(url):
                 break
     except:
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             RED, f"[{r.status_code}] \t\t",
             YELLOW, "[WARNING] \t",
             RED, "Failed to fetch media data"
@@ -80,14 +79,14 @@ def download_media(post_url):
 
     if not media_url:
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             RED, "[ERROR] \t",
             RED, "Invalid URL"
         )
         return
 
     colorPrint(
-        CYAN, f"[{time()}] \t",
+        CYAN, f"[{get_time()}] \t",
         GREEN, "[INFO] \t\t",
         LIGHT_YELLOW_EX, "Downloading..."
     )
@@ -104,19 +103,23 @@ def download_media(post_url):
             f.write(r.content)
 
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             GREEN, "[SUCCESS] \t",
             LIGHT_YELLOW_EX, "Downloaded ",
             LIGHT_BLUE_EX, ITALIC, f"{file_name} ", ITALIC_OFF,
             LIGHT_YELLOW_EX, f"at {ITALIC}'InstaDownloads'{ITALIC_OFF} folder"
         )
+    elif r.status_code == 429:
+        colorPrint(
+            CYAN, f"[{get_time()}] \t",
+            RED, "[429] \t\t\b",
+            YELLOW, "[WARNING] \t",
+            RED, "Instagram added rate limit to your IP. Try again later"
+        )
     else:
         colorPrint(
-            CYAN, f"[{time()}] \t",
+            CYAN, f"[{get_time()}] \t",
             RED, f"[{r.status_code}] \t\t\b",
             YELLOW, "[WARNING] \t",
             RED, "Failed to download media"
         )
-
-def time():
-    return datetime.now().strftime("%H:%M:%S")
