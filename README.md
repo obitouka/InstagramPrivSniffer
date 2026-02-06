@@ -33,10 +33,24 @@
   
 </div>
 
+## DISCLAIMER  
+> [!IMPORTANT]  
+> Date reported: 29/06/2025  
+> Meta replied: 01/07/2025
+> 
+> **Meta Security response to BBP:**  
+> “It's intended for collaboration reels to be visible publicly even if one of the collaborators is a private account. For more information, see [Collaboration feature](https://help.instagram.com/3526836317546926)”  
+![POC](https://github.com/obitouka/InstagramPrivSniffer/blob/main/assets/POC/MetaResponce.png)
+
+> [!CAUTION]  
+> **Created for educational purposes only, so please use it ethically. The developer is not responsible for any misuse.**
+
+<br>
+
 ## FEATURE :
 
 - **`Access private account posts` revealed via collaborating with public account**
-- **Download & view media `without login`**
+- **Download & view media**
 
 <br>
 
@@ -91,21 +105,9 @@ Please refer [issues14](https://github.com/obitouka/InstagramPrivSniffer/issues/
 
 <br>
 
-## DISCLAIMER  
-> [!IMPORTANT]  
-> This tool neither bypasses any security measures. It just uses [Collaboration feature](https://help.instagram.com/3526836317546926), where posts from a private account can be seen publicly if they collaborate with a public account.  
-
-> [!NOTE]  
-> **Meta Security confirmed (Bug Bounty response):**  
-> “It's intended for collaboration reels to be visible publicly even if one of the collaborators is a private account.”  
-
-> [!CAUTION]  
-> **Created for educational purposes only, so please use it ethically. The developer is not responsible for any misuse.**
-
-<br>
-
 ## CONTRIBUTING : 
-If you have questions, wish to contribute, report a bug or report a security issue, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file for guidelines. For any legal concerns regarding this project, please contact me directly before taking any action.
+If you have questions, wish to contribute, report a bug or report a security issue, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file for guidelines.   
+**For any legal concerns regarding this project, please contact me directly before taking any action (read "Issues Guide" of [CONTRIBUTING.md](https://github.com/obitouka/InstagramPrivSniffer/blob/main/.github/CONTRIBUTING.md#issues-guide)).**
 
 <br>
 
