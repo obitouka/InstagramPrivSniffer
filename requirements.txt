@@ -1,1 +1,1 @@
-requests
+curl_cffi
