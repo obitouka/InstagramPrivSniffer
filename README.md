@@ -38,9 +38,10 @@
 > Date reported: 29/06/2025  
 > Meta replied: 01/07/2025
 > 
-> **Meta Security response to BBP:**  
-> “It's intended for collaboration reels to be visible publicly even if one of the collaborators is a private account. For more information, see [Collaboration feature](https://help.instagram.com/3526836317546926)”  
-![POC](https://github.com/obitouka/InstagramPrivSniffer/blob/main/assets/POC/MetaResponce.png)
+> Discovered an endpoint that allowed viewing posts from a private Instagram account revealed via collaborating with public accounts. It was reported to Meta BBP related to privacy issue but after few days Meta confirmed that this is **intended behavior** depending upon [Collaboration feature](https://help.instagram.com/3526836317546926). Therefore, this is **not a vulnerability**
+>  
+> ## **POC**
+> ![POC](https://github.com/obitouka/InstagramPrivSniffer/blob/main/assets/POC/MetaResponce.png)
 
 > [!CAUTION]  
 > **Created for educational purposes only, so please use it ethically. The developer is not responsible for any misuse.**
@@ -71,7 +72,7 @@
 <br>
 
 ## USAGE :  
-### View available commands to fetch data
+### View available commands
 > [!TIP]
 > Navigate to the `InstagramPrivSniffer` root folder in a command line and run:
 > ```bash
@@ -88,7 +89,7 @@
 >  ```bash
 >  python main.py -n keyloggerluvr
 >  ```
->  Or use this to download and view post without login
+>  Or use this to download and view post
 >  ```bash
 >  python main.py -d https://www.instagram.com/keyloggerluvr/p/DL47hX4olz8wRQXBQ4HAaEmba9x7nC9HCSm4M80
 >  ```     
