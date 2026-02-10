@@ -8,4 +8,4 @@ Copyright (c) 2026 obitouka
 See the file 'LICENSE' for copying permission
 """
 
-__version__ = "2.4.3"
+__version__ = "2.5"
