@@ -1,5 +1,10 @@
 """
-Copyright (c) 2025 obitouka
+InstagramPrivSniffer - Banner Display Module
+
+This module provides the ASCII art banner for the InstagramPrivSniffer tool.
+Displays the tool's branding and version information in a stylized format.
+
+Copyright (c) 2026 obitouka
 See the file 'LICENSE' for copying permission
 """
 
@@ -10,7 +15,7 @@ logoCOLOR = GREEN
 instagramCOLOR = MAGENTA
 privSnifferCOLOR = RED
 
-ver = CYAN + ITALIC + __version__ + ITALIC_OFF + CYAN + privSnifferCOLOR
+ver = CYAN + BOLD + __version__ + BOLD_OFF + CYAN + privSnifferCOLOR
 name = ORANGE
 m = RED + "@" + logoCOLOR  # magnify symbol
 d = RED + "X" + logoCOLOR  # dot symbol
@@ -38,7 +43,14 @@ logo = logo.replace("=", f"{RED}={logoCOLOR}")
 logo = logo.replace("*", f"{DARK_GRAY_EX}*{logoCOLOR}")
 
 def printBanner():
+    """
+    Print the InstagramPrivSniffer ASCII art banner to the console.
+    
+    This function displays the tool's branding with colors and formatting.
+    If there are any issues with displaying the formatted banner, it falls back
+    to displaying the banner without formatting.
+    """
     try:
-        colorPrint(BOLD, BLINK, logo, RESET)
-    except:
         colorPrint(BOLD, logo, RESET)
+    except:
+        colorPrint(logo, RESET)

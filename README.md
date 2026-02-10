@@ -51,6 +51,8 @@
 ## FEATURE :
 
 - **`Access private account posts` revealed via collaborating with public account**
+- **Download media by URL or post number**
+- **Bulk download all posts (use -d 0) or specific posts (use -d N)**
 - **Download & view media**
 
 <br>
@@ -89,10 +91,20 @@
 >  ```bash
 >  python main.py -n keyloggerluvr
 >  ```
->  Or use this to download and view post
+>  
+>  **Download media using URL:**
 >  ```bash
 >  python main.py -d https://www.instagram.com/keyloggerluvr/p/DL47hX4olz8wRQXBQ4HAaEmba9x7nC9HCSm4M80
->  ```     
+>  ```
+>  
+>  **Download media using post numbers:**
+>  ```bash
+>  # Download all posts from a user
+>  python main.py -n keyloggerluvr -d 0
+>  
+>  # Download specific post (e.g., the 3rd post)
+>  python main.py -n keyloggerluvr -d 3
+>  ```
 
 <br>
 
@@ -101,8 +113,14 @@
 <br>
 
 ## FAQ
-- **Why “No posts found” even when the account has posts?**  
+- **Why "No posts found" even when the account has posts?**  
 Please refer [issues14](https://github.com/obitouka/InstagramPrivSniffer/issues/14)
+
+- **How do I download multiple posts at once?**
+Use `-d 0` with `-n username` to download all posts from a user
+
+- **What does the post number mean in `-d` flag?**
+When using `-d` with a number, you need to specify the username with `-n` flag. Post number 0 downloads all posts, and numbers 1-N download specific posts in order.
 
 <br>
 
