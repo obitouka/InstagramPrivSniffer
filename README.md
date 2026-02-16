@@ -39,7 +39,7 @@
 > Meta replied: 01/07/2025  
 > Tool created: 09/07/2025
 > 
-> I Discovered an endpoint that allowed me viewing posts from a private Instagram account revealed via collaborating with public accounts. I reported this to Meta BBP related to privacy issue but after few days Meta confirmed that this is **intended behavior** based on [Collaboration feature](https://help.instagram.com/3526836317546926). Therefore, this is **not a vulnerability**
+> I discovered an endpoint that allowed me viewing posts from a private Instagram account revealed via collaborating with public accounts. I reported this to Meta BBP related to privacy issue but after few days Meta confirmed that this is **intended behavior** based on [Collaboration feature](https://help.instagram.com/3526836317546926). Therefore, this is **not a vulnerability**
 >  
 > ## **POC**
 > ![POC](https://github.com/obitouka/InstagramPrivSniffer/blob/main/assets/POC/MetaResponce.png)
@@ -109,9 +109,13 @@ Please refer [issues14](https://github.com/obitouka/InstagramPrivSniffer/issues/
 
 <br>
 
-## CONTRIBUTING : 
-- Wish to contribute by adding a feature or by fixing a bug, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file for guidelines.   
-- Want to ask a question, suggest a feature or report a bug, please read the "Issues Guide" of [CONTRIBUTING.md](https://github.com/obitouka/InstagramPrivSniffer/blob/main/.github/CONTRIBUTING.md#issues-guide) for the guidlines.
+## CONTRIBUTING GUIDELINES : 
+Wish to contribute by adding a feature or by fixing a bug, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file for guidelines.
+
+<br>
+
+## ISSUES GUIDELINES :  
+Want to ask a question, suggest a feature or report a bug, please read the "Issues Guide" of [CONTRIBUTING.md](https://github.com/obitouka/InstagramPrivSniffer/blob/main/.github/CONTRIBUTING.md#issues-guide) for the guidlines.
 
 <br>
 
