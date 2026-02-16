@@ -36,15 +36,18 @@
 ## DISCLAIMER  
 > [!IMPORTANT]  
 > Date reported: 29/06/2025  
-> Meta replied: 01/07/2025
+> Meta replied: 01/07/2025  
+> Tool created: 09/07/2025
 > 
-> Discovered an endpoint that allowed viewing posts from a private Instagram account revealed via collaborating with public accounts. It was reported to Meta BBP related to privacy issue but after few days Meta confirmed that this is **intended behavior** depending upon [Collaboration feature](https://help.instagram.com/3526836317546926). Therefore, this is **not a vulnerability**
+> I Discovered an endpoint that allowed me viewing posts from a private Instagram account revealed via collaborating with public accounts. I reported this to Meta BBP related to privacy issue but after few days Meta confirmed that this is **intended behavior** based on [Collaboration feature](https://help.instagram.com/3526836317546926). Therefore, this is **not a vulnerability**
 >  
 > ## **POC**
 > ![POC](https://github.com/obitouka/InstagramPrivSniffer/blob/main/assets/POC/MetaResponce.png)
 
 > [!CAUTION]  
 > **Created for educational purposes only, so please use it ethically. The developer is not responsible for any misuse.**
+> 
+> **For any legal concerns regarding this project, please contact me directly before taking any action (read "Issues Guide" of [CONTRIBUTING.md](https://github.com/obitouka/InstagramPrivSniffer/blob/main/.github/CONTRIBUTING.md#issues-guide)).**
 
 <br>
 
@@ -107,8 +110,8 @@ Please refer [issues14](https://github.com/obitouka/InstagramPrivSniffer/issues/
 <br>
 
 ## CONTRIBUTING : 
-If you have questions, wish to contribute, report a bug or report a security issue, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file for guidelines.   
-**For any legal concerns regarding this project, please contact me directly before taking any action (read "Issues Guide" of [CONTRIBUTING.md](https://github.com/obitouka/InstagramPrivSniffer/blob/main/.github/CONTRIBUTING.md#issues-guide)).**
+- Wish to contribute by adding a feature or by fixing a bug, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file for guidelines.   
+- Want to ask a question, suggest a feature or report a bug, please read the "Issues Guide" of [CONTRIBUTING.md](https://github.com/obitouka/InstagramPrivSniffer/blob/main/.github/CONTRIBUTING.md#issues-guide) for the guidlines.
 
 <br>
 

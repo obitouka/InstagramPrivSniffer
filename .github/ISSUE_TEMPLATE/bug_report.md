@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Submit an issue related to privateMediaViewer
+about: Submit a bug related to InstagramPrivSniffer
 title: "Bug: "
 labels: bug
 ---

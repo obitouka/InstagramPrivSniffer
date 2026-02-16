@@ -1,6 +1,6 @@
 ---
-name: Feature Proposal or Request
-about: Suggest a new feature or ask for it to be added
+name: Add or Request Feature
+about: Add or request for a new feature
 title: "Feature: "
 labels: feature
 ---
@@ -15,6 +15,3 @@ Why is this feature useful?
 Yes / No.  
 If yes, explain briefly how in a simmple and precised way.  
 If no, explain why you need it added.
-
-**Notes:**  
-Any extra details or examples (Optional)
