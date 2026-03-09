@@ -53,7 +53,7 @@
 
 ## FEATURE :
 
-- **`Access private account posts` revealed via collaborating with public account**
+- **Can assist digital investigators (cyber units) to `access private account posts` which is revealed via collaborating with public account.**
 - **Download & view media**
 
 <br>
