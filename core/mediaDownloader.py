@@ -6,6 +6,7 @@ See the file 'LICENSE' for copying permission
 from curl_cffi import requests
 from utils.colorPrinter import *
 from datetime import datetime
+import os
 
 is_video = None
 media_url = None
@@ -99,7 +100,9 @@ def download_media(post_url):
     )
 
     if r.status_code == 200:
-        with open(f"InstaDownloads\\{file_name}", "wb") as f:
+        project_path = os.path.join(os.path.dirname(__file__), "..")
+        file_path = os.path.join(project_path, "InstaDownloads", file_name)
+        with open(file_path, "wb") as f:
             f.write(r.content)
 
         colorPrint(
