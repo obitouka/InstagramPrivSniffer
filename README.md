@@ -45,7 +45,7 @@
 > ![POC](https://github.com/obitouka/InstagramPrivSniffer/blob/main/assets/POC/MetaResponce.png)
 
 > [!CAUTION]  
-> **Created for educational purposes only, so please use it ethically. The developer is not responsible for any misuse.**
+> **Created strictly for educational, research and digital investigation purposes. The developer is not responsible for any misuse.**
 > 
 > **For any legal concerns regarding this project, please contact me directly before taking any action (read "Issues Guide" of [CONTRIBUTING.md](https://github.com/obitouka/InstagramPrivSniffer/blob/main/.github/CONTRIBUTING.md#issues-guide)).**
 

@@ -5,7 +5,7 @@ title: "Bug: "
 labels: bug
 ---
 
-**Description:**
+**Description:**  
 Briefly describe the problem.
 
 **Steps to Reproduce:**
@@ -13,9 +13,12 @@ Briefly describe the problem.
 2. Entered username(don't at all mention the username, it may lead to privacy problem which i care about)
 3. Describe what happened
 
-**Expected Behavior:**
+**Screenshot:**  
+Paste or drag the screenshot here.
+
+**Expected Behavior:**  
 What you expected to happen.
 
-**Environment:**
+**Environment(Optional):**
 - OS: [e.g., Windows 10]
 - Python version: [e.g., 3.11]
