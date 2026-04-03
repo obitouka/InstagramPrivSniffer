@@ -12,7 +12,7 @@ args = getArguments()
 
 if args.name:
     printBanner()
-    fetch_data(args.name)
+    fetch_data(args.name, debug=args.debug)
 elif args.dload:
     printBanner()
-    download_media(args.dload)
+    download_media(args.dload, debug=args.debug)

@@ -11,7 +11,7 @@ from datetime import datetime
 def get_time():
     return datetime.now().strftime("%H:%M:%S")
 
-def fetch_data(username):
+def fetch_data(username, debug=False):
     colorPrint(
         CYAN, f"[{get_time()}] \t",
         GREEN, "[INFO] \t\t\b", 
@@ -26,7 +26,7 @@ def fetch_data(username):
         response = requests.get(url, headers=headers)
 
         if response.status_code != 200:
-            error_handler(response)
+            error_handler(response, debug)
             return 
 
         user_data = response.json()["data"]["user"]
@@ -37,13 +37,26 @@ def fetch_data(username):
     except Exception as e:
         colorPrint(
             CYAN, f"[{get_time()}] \t",
-            RED, f"[{response.status_code}] \t\t\b",
-            YELLOW, "[WARNING] \t",
-            RED, "Failed to fetch account data"
+            RED, "[ERROR] \t\t\b",
+            RED, str(e)
         )
 
 
-def error_handler(response):
+def error_handler(response, debug=False):
+    if debug:
+        try:
+            full_error = response.json()
+        except:
+            full_error = response.text
+
+        colorPrint(
+            CYAN, f"[{get_time()}] \t",
+            RED, f"[{response.status_code}] \t\t\b",
+            YELLOW, "[DEBUG] \t\n\n",
+            GREEN, f"{full_error}"
+        )
+        return
+    
     if response.status_code == 404:
         colorPrint(
             CYAN, f"[{get_time()}] \t",

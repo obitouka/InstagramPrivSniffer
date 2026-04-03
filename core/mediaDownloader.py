@@ -15,7 +15,7 @@ file_name = None
 def get_time():
     return datetime.now().strftime("%H:%M:%S")
 
-def fetch_media(url):
+def fetch_media(url, debug=False):
     global is_video, media_url, file_name
     parts = url.split("/")
     
@@ -65,18 +65,31 @@ def fetch_media(url):
                     is_video = False
                     media_url = node["display_url"]
                 break
-    except:
-        colorPrint(
-            CYAN, f"[{get_time()}] \t",
-            RED, f"[{r.status_code}] \t\t",
-            YELLOW, "[WARNING] \t",
-            RED, "Failed to fetch media data"
-        )
+    except Exception as e:
+        if debug:
+            try:
+                full_error = r.json()
+            except:
+                full_error = r.text
+
+            colorPrint(
+                CYAN, f"[{get_time()}] \t",
+                RED, f"[{r.status_code}] \t\t\b",
+                YELLOW, "[DEBUG] \t\n\n",
+                GREEN, f"{full_error}"
+            )
+        else:
+            colorPrint(
+                CYAN, f"[{get_time()}] \t",
+                RED, f"[{r.status_code}] \t\t",
+                YELLOW, "[WARNING] \t",
+                RED, "Failed to fetch media data"
+            )
 
 
-def download_media(post_url):
+def download_media(post_url, debug=False):
     global is_video, media_url, file_name
-    fetch_media(post_url)
+    fetch_media(post_url, debug)
 
     if not media_url:
         colorPrint(
@@ -120,9 +133,22 @@ def download_media(post_url):
             RED, "Instagram added rate limit to your IP. Try again later"
         )
     else:
-        colorPrint(
-            CYAN, f"[{get_time()}] \t",
-            RED, f"[{r.status_code}] \t\t\b",
-            YELLOW, "[WARNING] \t",
-            RED, "Failed to download media"
-        )
+        if debug:
+            try:
+                full_error = r.json()
+            except:
+                full_error = r.text
+
+            colorPrint(
+                CYAN, f"[{get_time()}] \t",
+                RED, f"[{r.status_code}] \t\t\b",
+                YELLOW, "[DEBUG] \t\n\n",
+                GREEN, f"{full_error}"
+            )
+        else:
+            colorPrint(
+                CYAN, f"[{get_time()}] \t",
+                RED, f"[{r.status_code}] \t\t\b",
+                YELLOW, "[WARNING] \t",
+                RED, "Failed to download media"
+            )

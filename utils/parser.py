@@ -28,10 +28,15 @@ def getArguments():
     )
 
     parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Show full error details"
+    )
+
+    parser.add_argument(
         "--version", 
         help="version of this tool", 
         action="version", 
         version=f"InstagramPrviSniffer {__version__}"
     )
-
     return parser.parse_args()
