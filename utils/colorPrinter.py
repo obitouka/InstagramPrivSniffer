@@ -3,6 +3,10 @@ Copyright (c) 2025 obitouka
 See the file 'LICENSE' for copying permission
 """
 
+import os
+
+os.system("")
+
 BLACK = "\033[0;30m"
 RED = "\033[38;2;255;0;0m"
 GREEN = "\033[38;2;0;255;0m"
