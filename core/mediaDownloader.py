@@ -8,6 +8,8 @@ from utils.colorPrinter import *
 from datetime import datetime
 import os
 
+_session = requests.Session()
+
 is_video = None
 media_url = None
 file_name = None
@@ -46,7 +48,7 @@ def fetch_media(url, debug=False):
         LIGHT_YELLOW_EX, "Fetching..."
     )
     
-    r = requests.get(
+    r = _session.get(
         f"https://www.instagram.com/api/v1/users/web_profile_info/?username={user_name}",
         headers={
             "X-IG-App-ID": "936619743392459",
@@ -105,7 +107,7 @@ def download_media(post_url, debug=False):
         LIGHT_YELLOW_EX, "Downloading..."
     )
 
-    r = requests.get(
+    r = _session.get(
         media_url, 
         headers={
             "X-IG-App-ID": "936619743392459"

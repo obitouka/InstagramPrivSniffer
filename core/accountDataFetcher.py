@@ -7,6 +7,8 @@ from curl_cffi import requests
 from utils.colorPrinter import *
 from datetime import datetime
 
+_session = requests.Session()
+
 
 def get_time():
     return datetime.now().strftime("%H:%M:%S")
@@ -23,7 +25,7 @@ def fetch_data(username, debug=False):
         headers = {
             "X-IG-App-ID": "936619743392459",
         }
-        response = requests.get(url, headers=headers)
+        response = _session.get(url, headers=headers)
 
         if response.status_code != 200:
             error_handler(response, debug)
