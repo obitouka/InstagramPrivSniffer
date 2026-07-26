@@ -58,20 +58,47 @@
 
 <br>
 
-## INSTALLATION :   
-1. **Clone the tool**  
-   - Click [here](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads/main.zip) to download the ZIP file  
-   - *Or* clone the repository via command line:
+## INSTALLATION :
+
+1. **Get the source code**
+
+   - **Clone the repository (recommended)**
      ```bash
      git clone https://github.com/obitouka/InstagramPrivSniffer.git
+     cd InstagramPrivSniffer
      ```
+
+   - **Or download the [ZIP archive](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads/main.zip) and extract it.**
    
-2. **Install dependencies**
-   - Navigate to the repository root folder (where requirements.txt is located) in command line and run:
-     ```bash
-     python -m pip install -r requirements.txt
-     ```
-  
+2. **Create a virtual environment**
+
+   **Linux / macOS**
+   ```bash
+   python3 -m venv .venv
+   ```
+
+   **Windows**
+   ```bash
+   python -m venv .venv
+   ```
+
+3. **Activate the virtual environment**
+
+   **Linux / macOS**
+   ```bash
+   source .venv/bin/activate
+   ```
+
+   **Windows**
+   ```bash
+   .venv\Scripts\activate
+   ```
+
+4. **Install dependencies**
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+   
 <br>
 
 ## USAGE :  
